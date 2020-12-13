@@ -1,3 +1,55 @@
+/* Elements */
+body{
+    background: url(https://cdn.pixabay.com/photo/2014/06/16/23/40/grey-370125_1280.png); 
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
 h1, h2 {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+p {
+    font-size: 1.2rem;
+}
+
+footer{
+    color: #696f73;
+    background-color: #666666;   
+}
+
+
+/* Classes */
+.my-name{
+    background-color:#4aaaa5;
+    color: white;
+    font-weight: bold;
+}
+
+.link-text-size{
+    font-size: 1.3rem;
+}
+
+.copyright-text-size{
+    font-size: 1.5rem;
+}
+
+.text-green{
+    color: #4aaaa5;
+}
+
+.bg-green{
+    background-color:#4aaaa5;
+}
+
+#submit {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
