@@ -9,77 +9,88 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles.css">
   </head>
+  
   <body>
     <div class="d-flex flex-column justify-content-between min-vh-100">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white p-2">
-      <h1 class="my-name py-2 ml-3">Xavier Francis</h1>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav link-text-size">
-          <li class="nav-item active">
-            <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">About</a>
-            </li>
-          </ul>
-        </div>
+<!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white p-2">
+          <h1 class="py-2 ml-3 mb-0" id="my-name">Xavier Francis</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav link-text-size">
+              <li class="nav-item active">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">About</a>
+              </li>
+            </ul>
+          </div>
       </nav>
     
-    <!-- Main Section -->
-    
-    <main class="p-3 py-5 mt-3">
-      <section class="p-4 bg-white col-lg-6 col-md-6 col-sm-12">
-        <h1 class="font-weight-bold text-green pt-3">
-            Contact
-        </h1>
-        <hr>
+<!-- Main Section -->    
+      <main class="p-3 py-5 mt-1">
+          <section class="p-4 bg-white col-lg-8 col-md-6 col-sm-12">
+            <h1 class="font-weight-bold text-green pt-3 mb-0">
+                Contact
+            </h1>
+            <hr>
+            <form>
+                <div class="pl-3">
+                    
+                    <!-- Name Input-->
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Name</label>
+                      <input type="email" class="form-control col-lg-9" id="exampleFormControlInput1" placeholder="Name">
+                    </div>
+                    
+                    <!-- Email Input-->
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email address</label>
+                      <input type="email" class="form-control col-lg-9" id="exampleFormControlInput1" placeholder="Email">
+                    </div>
+                    
+                    <!-- Message Input-->
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Message</label>
+                      <textarea class="form-control col-lg-9" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                    </div>
+                </div>
 
-        <form>
-          <div class="pl-3">
-            <div class="form-group">
-            <label for="exampleFormControlInput1">Name</label>
-            <input type="email" class="form-control col-lg-8" id="exampleFormControlInput1" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control col-lg-8" id="exampleFormControlInput1" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control col-lg-8" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
-          </div>
-          </div>
-          
-          <button id="submit">Submit</button>
-        </form>
-    </section>
-    </main>
+                <!-- Submit Button -->
+                <button id="submit">Submit</button>
+            </form>
+          </section>
+      </main>    
     
-    
-   <!-- Footer -->
-   <footer>
-    <div class="container-fluid">
-        <div class="row bg-green p-1">    
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-center copyright-text-size p-3">© Copyright</p>
-            </div>
-        </div>    
-    </div>
+<!-- Footer -->
+      <footer>
+          <!-- Geen Space Above Footer -->
+          <div class="container-fluid">
+              <div class="row bg-green p-1"></div>   
+              
+              <!-- Footer Below Green Line -->
+              <div class="row">
+                  <div class="col-md-12">
+                      <p class="text-center copyright-text-size p-3">© Copyright</p>
+                  </div>
+              </div>    
+          </div>
    </footer>
   </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
