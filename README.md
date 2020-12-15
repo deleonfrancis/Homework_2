@@ -1,7 +1,5 @@
 # Bootstrap_Responsive
 
-![Project Image](project-image-url)
-
 > This project uses Bootstrap to showcase a responsive design website that renders well on a variety of devices.
 
 ---
