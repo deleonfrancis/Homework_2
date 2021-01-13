@@ -15,37 +15,20 @@ p {
   font-size: 1.2rem;
 }
 
-/* anchor tags in portfolio */
-.portfolio-a:link, .portfolio-a:visited {
-    background-color: #e8e8e8;
-    color: black;
-    padding: 1% 3%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10px;
-    margin-top: 3%;
-  }
-  
-  .portfolio-a:hover, .portfolio-a:active {
-    background-color: #495464;
-  }
-
-
 footer {
-  background-color: #666666;
+  background-color: #495464;
 }
 
 /* IDs */
 
 /* for styling of my name in navbar */
 #my-name {
-  background-color: #4aaaa5;
+  background-color: #1f6f8b;
   color: white;
 }
 /* for submit button */
 #submit {
-  background-color: #4aaaa5;
+  background-color: #1f6f8b;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -53,6 +36,11 @@ footer {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+#my-full-name {
+  text-align: center;
+  color: honeydew;
 }
 
 /* Classes */
@@ -70,18 +58,12 @@ footer {
 
 /* makes h1 Contact, Portfolio, and About green */
 .text-green {
-  color: #4aaaa5;
+  color: #1f6f8b;
 }
 
 /* used to make my name in navbar green. Also used to make green line above footer  */
 .bg-green {
-  background-color: #4aaaa5;
-}
-
-/* Portfolio  Images*/
-.port-image {
-  max-width: 100%;
-  height: auto;
+  background-color: #1f6f8b;
 }
 
 /* @media */
