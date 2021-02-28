@@ -10,10 +10,11 @@ function Home() {
         <div className="row">
           <div className="col-md-12">
             <div className="float-left pr-4">
-              <img
+              <img className="rounded-circle"
                 src="/images/my_picture/xavier_picture.jpeg"
                 alt="Photograph of Xavier"
-                height={220}
+                height={150}
+                width={150}
               />
             </div>
             <div className="text-justify">

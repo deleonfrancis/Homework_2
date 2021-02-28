@@ -1,99 +1,59 @@
-import React from 'react'
+import React from "react";
+import Project from "../components/Project";
 
 function Portfolio() {
-    return (
-        <section class="p-3 py-5 mt-1">
-        <div class="bg-white pb-5 center-this col-lg-8 col-md-12 col-sm-12 col-xs-12 shadow-lg">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <h1 class="font-weight-bold text-green pt-3 mb-0">Portfolio</h1>
-              </div>
-            </div>
-            <hr />
-
-            <div class="row center-this">
-              {/* Placeholder 1 */}
-              <div
-                class="col-lg-4 col-md-12 col-sm-12 img-port text-center bg-light"
-              >
-              <p class="m-2 img-title text-white">Group Project "Mood"</p>
-                <img
-                  src="../images/gifs/mood_1.gif"
-                  alt="Mood Project"
-                  class="image-fluid port-image"
-                />
-                <a href="https://github.com/Bokosyk/Mood" class="portfolio-a">Repository</a>
-                <a
-                  href="https://bokosyk.github.io/Mood/"
-                  class="portfolio-a px-3">Website</a>
-              </div>
-
-              {/* Placeholder 2 */}
-              <div
-                class="col-lg-4 col-md-12 col-sm-12 img-port text-center bg-light"
-              >
-              <p class="m-2 img-title text-white">Weather Dashboard</p>
-                <img
-                  src="../images/gifs/weatherdash1.gif"
-                  alt="Weather App"
-                  class="image-fluid port-image"
-                />
-                <a
-                  href="https://github.com/deleonfrancis/Weather_Dashboard"
-                  class="portfolio-a"
-                  >Repository</a>
-                <a
-                  href="https://deleonfrancis.github.io/Weather_Dashboard/"
-                  class="portfolio-a px-3"
-                  >Website</a>
-              </div>
-            </div>
-
-            <div class="row mt-3">
-              {/* Placeholder 3 */}
-              <div
-                class="col-lg-4 col-md-12 col-sm-12 img-port text-center bg-light"
-              >
-              <p class="m-2 img-title text-white">Work Day Scheduler</p>
-                <img
-                  src="../images/gifs/DayGif.gif"
-                  alt="Daily todo list"
-                  class="image-fluid port-image"
-                />
-                <a
-                  href="https://github.com/deleonfrancis/Work_Day_Scheduler"
-                  class="portfolio-a"
-                  >Repository</a>
-                <a
-                  href="https://deleonfrancis.github.io/Work_Day_Scheduler/"
-                  class="portfolio-a px-3"
-                  >Website</a>
-              </div>
-              {/* Placeholder 4 */}
-              <div
-                class="col-lg-4 col-md-12 col-sm-12 img-port text-center bg-light"
-              >
-              <p class="m-2 img-title text-white">Burger Logger</p>
-                <img
-                  src="../images/gifs/burgers.gif"
-                  alt="Burger Logger"
-                  class="image-fluid port-image"
-                />
-                <a
-                  href="https://github.com/deleonfrancis/Burgers_logger"
-                  class="portfolio-a"
-                  >Repository</a>
-                <a
-                  href="https://evening-river-12924.herokuapp.com/"
-                  class="portfolio-a px-3"
-                  >Website</a>
-              </div>
+  return (
+    <section className="p-3 py-5 mt-1">
+      <div className="bg-white pb-5 center-this col-lg-8 col-md-12 col-sm-12 col-xs-12 shadow-lg">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-6">
+              <h1 className="font-weight-bold text-green pt-3 mb-0">
+                Portfolio
+              </h1>
             </div>
           </div>
+          <hr />
+
+          <div className="row center-this d-flex justify-content-between">
+            {/* Project 1 */}
+            <Project
+              name='Group Project "Mood"'
+              src="../images/gifs/mood_1.gif"
+              repo="https://github.com/Bokosyk/Mood"
+              website="https://bokosyk.github.io/Mood/"
+            />
+
+            {/* Project 2 */}
+            <Project
+              name="Weather Dashboard"
+              src="../images/gifs/weatherdash1.gif"
+              repo="https://github.com/deleonfrancis/Weather_Dashboard"
+              website="https://deleonfrancis.github.io/Weather_Dashboard/"
+            />
+          </div>
+
+          <div className="row center-this d-flex justify-content-between">
+            {/* Project 3 */}
+            <Project
+              name="Work Day Scheduler"
+              src="../images/gifs/DayGif.gif"
+              repo="https://github.com/deleonfrancis/Work_Day_Scheduler"
+              website="https://deleonfrancis.github.io/Work_Day_Scheduler/"
+            />
+
+            {/* Project 4 */}
+            <Project
+              name="Burger Logger"
+              src="../images/gifs/burgers.gif"
+              repo="https://deleonfrancis.github.io/Work_Day_Scheduler/"
+              website="https://evening-river-12924.herokuapp.com/"
+            />
+          </div>
         </div>
-      </section>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default Portfolio
+export default Portfolio;
