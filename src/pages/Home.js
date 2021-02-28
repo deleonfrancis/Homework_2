@@ -42,7 +42,7 @@ function Home() {
                 we've learnt some HTML, CSS, JavaScript, Bootstrap, APIs and
                 more. I hope to one day partner with a company and gain some
                 experience. Perhaps enough experience to one day be a Senior Web
-                Developer. Thanks for visiting my website.
+                Developer.
               </p>
             </div>
           </div>
