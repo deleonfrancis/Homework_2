@@ -2,8 +2,8 @@ import React from 'react'
 
 function Contact() {
     return (
-        <main className="p-3 py-5 mt-1">
-          <section className="p-4 center-this bg-white col-lg-4 col-md-6 col-sm-12">
+        <section className="p-3 py-5 mt-1">
+          <div className="p-4 center-this bg-white col-lg-4 col-md-6 col-sm-12">
             <h1 className="font-weight-bold text-green pt-3 mb-0">
                 Contact
             </h1>
@@ -33,8 +33,8 @@ function Contact() {
                {/* Submit Button */}
                 <button id="submit">Submit</button>
             </form>
-          </section>
-      </main>    
+          </div>
+      </section>    
     )
 }
 
