@@ -2,7 +2,7 @@ import React from 'react'
 
 function Portfolio() {
     return (
-        <main class="p-3 py-5 mt-1">
+        <section class="p-3 py-5 mt-1">
         <div class="bg-white pb-5 center-this col-lg-8 col-md-12 col-sm-12 col-xs-12">
           <div class="container-fluid">
             <div class="row">
@@ -92,7 +92,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-      </main>
+      </section>
     )
 }
 
