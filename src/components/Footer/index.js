@@ -11,10 +11,10 @@ const year = date.getFullYear();
   </div>
   <div class="row">
       <div class="col-md-12 text-center">
-        <a href="https://github.com/deleonfrancis" target="_blank">
+        <a href="https://github.com/deleonfrancis" target="_blank" rel="noreferrer">
           <i class="fab fa-github fa-3x text-white p-3"></i>
         </a>
-        <a href="https://www.linkedin.com/in/deleon-francis-9b09291b9/" target="_blank">
+        <a href="https://www.linkedin.com/in/deleon-francis-9b09291b9/" target="_blank" rel="noreferrer">
           <i class="fab fa-linkedin fa-3x p-3"></i>
         </a>              
       </div>
