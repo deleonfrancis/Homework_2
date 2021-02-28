@@ -36,8 +36,8 @@ As a Web Developer, there will be times that I'm called to make a mobile-first a
 
 ## Links
 
-- To Repository: https://github.com/deleonfrancis/Bootstrap_Responsive
-- To Website: https://deleonfrancis.github.io/Bootstrap_Responsive/
+- To Repository: https://github.com/deleonfrancis/My_Portfolio
+- To Website: https://deleonfrancis.github.io/My_Portfolio/
 
 [Back To The Top](#My_Portfolio)
 
