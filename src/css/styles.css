@@ -1,8 +1,14 @@
 /* Elements */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background: url(https://cdn.pixabay.com/photo/2014/06/16/23/40/grey-370125_1280.png);
   background-size: cover;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  margin: 0 0 150px;
 }
 
 h1 {
@@ -18,6 +24,11 @@ p {
 
 footer {
   background-color: #495464;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 155px;
 }
 
 /* IDs */
@@ -55,6 +66,8 @@ footer {
 .copyright-text {
   font-size: 1.5rem;
   color: #696f73;
+  /* background-color: #1f6f8b; */
+  padding: 0%;
 }
 
 /* makes h1 Contact, Portfolio, and About green */

@@ -3,7 +3,7 @@ import React from 'react'
 function Portfolio() {
     return (
         <section class="p-3 py-5 mt-1">
-        <div class="bg-white pb-5 center-this col-lg-8 col-md-12 col-sm-12 col-xs-12">
+        <div class="bg-white pb-5 center-this col-lg-8 col-md-12 col-sm-12 col-xs-12 shadow-lg">
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-6">

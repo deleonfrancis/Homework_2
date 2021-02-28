@@ -2,27 +2,27 @@ import React from "react";
 
 function Home() {
   return (
-    <section class="flex-fill p-3 py-5 mt-1">
-      <div class="bg-white center-this col-lg-8 col-md-12 col-sm-12">
-        <h1 class="text-green pt-3 mb-0">About Me</h1>
+    <section className="flex-fill p-3 py-5 mt-1">
+      <div className="bg-white center-this col-lg-8 col-md-12 col-sm-12 shadow-lg">
+        <h1 className="text-green pt-3 mb-0">About Me</h1>
         <hr />
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="float-left pr-4">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="float-left pr-4">
               <img
-                src="../images/my_picture/xavier_picture.jpeg"
+                src="/images/my_picture/xavier_picture.jpeg"
                 alt="Photograph of Xavier"
                 height={220}
               />
             </div>
-            <div class="text-justify">
+            <div className="text-justify">
               <p>
                 Hello, I’m Xavier. I believe greatness comes from within, and
                 every living person can experience fullness of life. I was born
                 in Jamaica, and moved to the United States at twelve years old.
                 In 2004 I graduated from Edgewater H.S. in Orlando, Florida.
-                After completing some class in Aeronautical Engineering, I
+                After completing some classes in Aeronautical Engineering, I
                 pivoted my studies and obtain a certificate from the Federal
                 Aviation Administration to be a certified Airframe & Powerplant
                 Mechanic. Upon completion of this certificate, I worked for

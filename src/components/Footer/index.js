@@ -21,7 +21,10 @@ const year = date.getFullYear();
       <div className="col-md-12 text-center">
         <p className="text-white m-0">E-mail: <span className="text-primary">dxfrancis.coding@gmail.com</span></p>
         <p className="text-white">Phone: <span className="text-primary">(407) 437-1137</span></p>
-        <p className="copyright-text py-1">{`© Copyright ${year}`}</p>
+        <div className="col-md-12 text-center copyright-text">
+        <p className="m-0 p-0">{`© Copyright ${year}`}</p>
+        </div>
+        
       </div>
     </div>    
 </footer>
