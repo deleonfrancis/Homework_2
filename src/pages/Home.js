@@ -1,4 +1,5 @@
 import React from "react";
+import xavier_picture from "../images/my_picture/xavier_picture.jpeg"
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
           <div className="col-md-12">
             <div className="float-left pr-4">
               <img className="rounded-circle"
-                src="/images/my_picture/xavier_picture.jpeg"
+                src={xavier_picture}
                 alt="Photograph of Xavier"
                 height={150}
                 width={150}

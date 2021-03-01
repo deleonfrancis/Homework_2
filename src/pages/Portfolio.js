@@ -1,5 +1,10 @@
 import React from "react";
 import Project from "../components/Project";
+import mood_1 from "../images/gifs/mood_1.gif";
+import weatherdash1 from "../images/gifs/weatherdash1.gif";
+import dayGif from "../images/gifs/dayGif.gif";
+import burgers from "../images/gifs/burgers.gif";
+import ed_screenshot from "../images/screenshots/ed_screenshot.png"
 
 function Portfolio() {
   return (
@@ -19,7 +24,7 @@ function Portfolio() {
             {/* Project 1 */}
             <Project
               name='Group Project "Mood"'
-              src="/images/gifs/mood_1.gif"
+              src={mood_1}
               repo="https://github.com/Bokosyk/Mood"
               website="https://bokosyk.github.io/Mood/"
             />
@@ -27,7 +32,7 @@ function Portfolio() {
             {/* Project 2 */}
             <Project
               name="Weather Dashboard"
-              src="/images/gifs/weatherdash1.gif"
+              src={weatherdash1}
               repo="https://github.com/deleonfrancis/Weather_Dashboard"
               website="https://deleonfrancis.github.io/Weather_Dashboard/"
             />
@@ -37,7 +42,7 @@ function Portfolio() {
             {/* Project 3 */}
             <Project
               name="Work Day Scheduler"
-              src="/images/gifs/DayGif.gif"
+              src={dayGif}
               repo="https://github.com/deleonfrancis/Work_Day_Scheduler"
               website="https://deleonfrancis.github.io/Work_Day_Scheduler/"
             />
@@ -45,7 +50,7 @@ function Portfolio() {
             {/* Project 4 */}
             <Project
               name="Burger Logger"
-              src="/images/gifs/burgers.gif"
+              src={burgers}
               repo="https://github.com/deleonfrancis/Burgers_logger"
               website="https://evening-river-12924.herokuapp.com/"
             />
@@ -55,7 +60,7 @@ function Portfolio() {
             {/* Project 5 */}
             <Project
               name="Employee Directory"
-              src="/images/screenshots/ED_screenshot.png"
+              src={ed_screenshot}
               repo="https://github.com/deleonfrancis/Employee_Directory"
               website="https://deleonfrancis.github.io/Employee_Directory/"
             />
