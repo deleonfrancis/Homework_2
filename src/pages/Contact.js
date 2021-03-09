@@ -8,19 +8,19 @@ function Contact() {
                 Contact
             </h1>
             <hr />
-            <form>
+            <form name="contact" method="POST" data-netlify="true">
                 <div className="pl-3">
                     
                     {/* Name Input */}
                     <div className="form-group">
                       <label for="exampleFormControlInput1">Name</label>
-                      <input type="email" className="form-control col-lg-9" id="exampleFormControlInput1" placeholder="Name" />
+                      <input type="text" name="name" className="form-control col-lg-9" id="exampleFormControlInput1" placeholder="Enter Name" />
                     </div>
                     
                     {/* Email Input */}
                     <div className="form-group">
                       <label for="exampleFormControlInput1">Email address</label>
-                      <input type="email" className="form-control col-lg-9" id="exampleFormControlInput1" placeholder="Email" />
+                      <input type="email" name="email" className="form-control col-lg-9" id="exampleFormControlInput1" placeholder="Enter Email" />
                     </div>
                     
                     {/* Message Input*/}
@@ -31,7 +31,7 @@ function Contact() {
                 </div>
 
                {/* Submit Button */}
-                <button id="submit">Submit</button>
+                <button type="submit" id="submit">Submit</button>
             </form>
           </div>
       </section>    
