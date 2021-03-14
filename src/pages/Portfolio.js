@@ -4,7 +4,8 @@ import mood_1 from "../images/gifs/mood_1.gif";
 import weatherdash1 from "../images/gifs/weatherdash1.gif";
 import dayGif from "../images/gifs/dayGif.gif";
 import burgers from "../images/gifs/burgers.gif";
-import ed_screenshot from "../images/screenshots/ed_screenshot.png"
+import ed_screenshot from "../images/screenshots/ed_screenshot.png";
+import donde_login from "../images/screenshots/donde_login.png"
 
 function Portfolio() {
   return (
@@ -23,10 +24,10 @@ function Portfolio() {
           <div className="row center-this d-flex justify-content-between">
             {/* Project 1 */}
             <Project
-              name='Group Project "Mood"'
-              src={mood_1}
-              repo="https://github.com/Bokosyk/Mood"
-              website="https://bokosyk.github.io/Mood/"
+              name='Dondé'
+              src={donde_login}
+              repo="https://github.com/jmasone15/travel-planner-project"
+              website="https://shielded-woodland-30004.herokuapp.com/"
             />
 
             {/* Project 2 */}
@@ -64,7 +65,13 @@ function Portfolio() {
               repo="https://github.com/deleonfrancis/Employee_Directory"
               website="https://deleonfrancis.github.io/Employee_Directory/"
             />
-
+            {/* Project 6 */}
+            <Project
+              name='Group Project "Mood"'
+              src={mood_1}
+              repo="https://github.com/Bokosyk/Mood"
+              website="https://bokosyk.github.io/Mood/"
+            />
           </div>
         </div>
       </div>
