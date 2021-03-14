@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 
@@ -17,7 +17,7 @@ function App() {
         <Navbar />
         <Wrapper>
           <Route exact path="/" component={Home} />
-          <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/contact" component={Contact} /> */}
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/resume" component={Resume} />
         </Wrapper>
