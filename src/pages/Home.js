@@ -1,5 +1,5 @@
 import React from "react";
-import xavier_picture from "../images/my_picture/xavier_picture.jpeg"
+import xavier_picture from "../images/my_picture/xavier_picture.jpeg";
 
 function Home() {
   return (
@@ -11,7 +11,8 @@ function Home() {
         <div className="row">
           <div className="col-md-12">
             <div className="float-left pr-4">
-              <img className="rounded-circle"
+              <img
+                className="rounded-circle"
                 src={xavier_picture}
                 alt="Photograph of Xavier"
                 height={150}
@@ -23,27 +24,29 @@ function Home() {
                 Hello, I’m Xavier. I believe greatness comes from within, and
                 every living person can experience fullness of life. I was born
                 in Jamaica, and moved to the United States at twelve years old.
-                In 2004 I graduated from Edgewater H.S. in Orlando, Florida.
-                After completing some classes in Aeronautical Engineering, I
-                pivoted my studies and obtain a certificate from the Federal
-                Aviation Administration to be a certified Airframe & Powerplant
-                Mechanic. Upon completion of this certificate, I worked for
-                various companies until the global financial downturn of the
-                aviation industry in 2020. It was at this juncture that decided
-                to pursue something that gave me great interest, and that could
-                fulfill my creating personality. This soul searching and self
-                analyst led me to Web Development.
+                In 2004, I graduated from Edgewater H.S. in Orlando, Florida and
+                went on to study Aeronautical Engineering at Oakwood University
+                and Valencia CC. After completing some courses, I pivoted my
+                studies and obtain a licence from the Federal Aviation
+                Administration to be a certified Aircraft Mechanic. Upon
+                completion of this licence, I worked for various companies until
+                the global financial downturn of the aviation industry in 2020.
+                It was at this juncture that decided to pursue something that
+                gave me great interest, and that could fulfill my creating
+                personality. This soul searching and self analyst led me to Web
+                Development.
               </p>
               <br />
               <p>
-                Currently, I'm enrolled in the University of Central Florida's
-                Coding Bootcamp. This program has been a enormous challenge, but
-                i'm loving the process of learning something worthwhile and
-                fulfilling. It's only been a few weeks, but in this short time
-                we've learnt some HTML, CSS, JavaScript, Bootstrap, APIs and
-                more. I hope to one day partner with a company and gain some
-                experience. Perhaps enough experience to one day be a Senior Web
-                Developer.
+                My goal and desire to be a web developer led me to the
+                University of Central Florida's Coding Bootcamp. This program
+                was an enormous challenge, but I loved the process of learning
+                something worthwhile and fulfilling. In this bootcamp, we studied
+                and learned a host of technologies not limited to but including
+                React, JavaScript, Express, Node, MongoDB, Mongoose, Bootstrap,
+                CSS, and HTML. I hope to one day partner with a company that
+                would afford me the opportunity to gain some experience. Perhaps
+                enough experience to one day be a Senior Full Stack Developer.
               </p>
             </div>
           </div>
