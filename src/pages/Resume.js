@@ -1,5 +1,5 @@
 import React from 'react'
-import mar15_2021_Resume2 from "../files/resume/mar15_2021_Resume2.pdf"
+import resume_mar16_2021 from "../files/resume/resume_mar16_2021.pdf"
 
 function Resume() {
     return (
@@ -12,9 +12,9 @@ function Resume() {
 
         <div class="row pb-3">
             <div class="col-md-12 text-center">
-             <a href={mar15_2021_Resume2} download="Francis_resume.pdf"><i class="fas fa-cloud-download-alt fa-3x text-dark"></i></a>
+             <a href={resume_mar16_2021} download="Francis_resume.pdf"><i class="fas fa-cloud-download-alt fa-3x text-dark"></i></a>
              <br />
-             <a href={mar15_2021_Resume2} download="Francis_resume.pdf">Click to download</a>   
+             <a href={resume_mar16_2021} download="Francis_resume.pdf">Click to download</a>   
             </div>
         </div>
     </div>
