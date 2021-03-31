@@ -1,6 +1,12 @@
 import React, { Fragment } from "react";
 import Navbar from "../components/Navbar";
-// import Project from "../components/Project";
+import Project from "../components/Project";
+import donde_login from "../images/screenshots/donde_login.png";
+import weatherdash1 from "../images/screenshots/weatherdash1.png";
+import dayGif from "../images/screenshots/dayGif.png";
+import burgers from "../images/screenshots/burgers.png";
+import ed_screenshot from "../images/screenshots/ed_screenshot.png";
+import mood_1 from "../images/gifs/mood_1.gif";
 
 function Portfolio() {
   return (
@@ -9,60 +15,59 @@ function Portfolio() {
       <section id="portfolio-section" className="p-3 py-5 mt-1 bg-light">
         <h1 className="pt-3 mb-0">Portfolio</h1>
         <hr />
-        Projects coming soon...
-
-            {/* <div className="row center-this d-flex justify-content-between">
-              Project 1
+            <div className="row center-this d-flex justify-content-center">
+              {/* Project 1 */}
               <Project
                 name="Dondé"
+                detail="A full-stack MERN travel planner application"
                 src={donde_login}
                 repo="https://github.com/jmasone15/travel-planner-project"
-                website="https://shielded-woodland-30004.herokuapp.com/"
+                website="https://dondetravel.herokuapp.com/"
               />
-
-              Project 2
+              {/* Project 2 */}
               <Project
                 name="Weather Dashboard"
+                detail="A current and 5-day weather application"
                 src={weatherdash1}
                 repo="https://github.com/deleonfrancis/Weather_Dashboard"
                 website="https://deleonfrancis.github.io/Weather_Dashboard/"
               />
-            </div>
 
-            <div className="row center-this d-flex justify-content-between">
-              Project 3
+              {/* Project 3 */}
               <Project
                 name="Work Day Scheduler"
                 src={dayGif}
+                detail="A time sensitive to do list application"
                 repo="https://github.com/deleonfrancis/Work_Day_Scheduler"
                 website="https://deleonfrancis.github.io/Work_Day_Scheduler/"
               />
-
-              Project 4
+            </div>
+            <div className="row center-this d-flex justify-content-center m-1">
+              {/* Project 4 */}
               <Project
                 name="Burger Logger"
+                detail="Log the burger they've eaten and want to eat"
                 src={burgers}
                 repo="https://github.com/deleonfrancis/Burgers_logger"
                 website="https://evening-river-12924.herokuapp.com/"
               />
-            </div>
-
-            <div className="row center-this d-flex justify-content-between">
-              Project 5
+               {/* Project 5 */}
               <Project
                 name="Employee Directory"
+                detail="View filter a employee director"
                 src={ed_screenshot}
                 repo="https://github.com/deleonfrancis/Employee_Directory"
                 website="https://deleonfrancis.github.io/Employee_Directory/"
               />
-              Project 6
+              {/* Project 6 */}
               <Project
                 name='Group Project "Mood"'
+                detail="This application returns a YouTube music playlist based on your mood"
                 src={mood_1}
                 repo="https://github.com/Bokosyk/Mood"
                 website="https://bokosyk.github.io/Mood/"
               />
-            </div> */}
+            </div>
       </section>
     </Fragment>
   );

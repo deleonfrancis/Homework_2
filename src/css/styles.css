@@ -99,7 +99,7 @@ footer {
   text-align: center;
 }
 /* ================================= */
-/* =========== Resume =========== */
+/* =========== Portfolio =========== */
 #portfolio-section{
   /* background-color: #1a1c1d; */
   /* color: white; */
@@ -109,7 +109,48 @@ footer {
   width: 90%;
   text-align: center;
 }
+.to-site-btn {
+  border: 1px solid #d3354a;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  box-sizing: inherit;
+  cursor: pointer;
+  font-size: 13pt;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+.to-site-btn:hover {
+  background-color: #d3354a;
+  text-decoration: none;
+  color: white;
+}
+.img-port {
+  margin: 5% 0% 0% 0%;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+.port-image {
+  max-width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.project-title {
+  color: #17252c;
+  margin-bottom: 10px;
+}
+
+.project-detail {
+  width: 60%;
+  margin: 0 auto 5px;
+  color: #d3354a;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
 /* ================================= */
+
 /* IDs */
 
 /* for styling of my name in navbar */

@@ -1,5 +1,5 @@
 /* anchor tags in Portfolio */
-.portfolio-a:link,
+/* .portfolio-a:link,
 .portfolio-a:visited {
   background-color: #e8e8e8;
   color: black;
@@ -15,24 +15,8 @@
 .portfolio-a:active {
   background-color: #495464;
   color: honeydew;
-}
+} */
 /* Portfolio image margin top*/
-.img-port {
-  margin: 5% 0% 0% 0%;
-  border: 1px solid #dddddd;
-  border-radius: 10px;
-}
-
-/* Portfolio  Images*/
-.port-image {
-  max-width: 100%;
-  height: auto;
-}
-
-/* image titles */
-.img-title {
-  background-color: #1f6f8b;
-}
 
 center {
   margin: 0 auto;
