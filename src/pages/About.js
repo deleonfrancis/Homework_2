@@ -1,7 +1,7 @@
 import React from "react";
 import xavier_picture from "../images/my_picture/xavier_picture.jpeg";
 
-function Home() {
+function About() {
   return (
     <section className="flex-fill p-3 py-5 mt-1">
       <div className="bg-white center-this col-lg-8 col-md-12 col-sm-12 shadow-lg">
@@ -56,4 +56,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

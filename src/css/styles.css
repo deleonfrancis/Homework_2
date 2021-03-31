@@ -1,14 +1,19 @@
 /* Elements */
-html {
+/* html {
   position: relative;
   min-height: 100%;
-}
+} */
 
-body {
-  background: url(https://cdn.pixabay.com/photo/2014/06/16/23/40/grey-370125_1280.png);
-  background-size: cover;
+body,
+html {
+  /* background: url(https://cdn.pixabay.com/photo/2014/06/16/23/40/grey-370125_1280.png);
+  background-size: cover; */
   /* min-height: 100vh; */
-  margin: 0 0 150px;
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  background-color: #876;
+  /* margin: 0 0 150px; */
 }
 
 h1 {
@@ -21,7 +26,6 @@ p {
   font-size: 1.2rem;
 }
 
-
 footer {
   background-color: #495464;
   position: absolute;
@@ -30,6 +34,46 @@ footer {
   width: 100%;
   height: auto;
 }
+
+/* =========== Homepage =========== */
+#welcome {
+  background-color: #1a1c1d;
+  color: white;
+  margin: auto;
+  /* margin-top: 80px; */
+  padding: 80px;
+  width: 80%;
+  text-align: center;
+}
+.welcome-text {
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.welcome-name {
+  color: #d3354a;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.learnBtn {
+  border: 1px solid #fff;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+    box-sizing: inherit;
+    cursor: pointer;
+    font-size: 13pt;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+.learnBtn:hover {
+  background-color: rgb(0, 165, 129);
+  text-decoration: none;
+}
+/* ================================= */
+
 
 /* IDs */
 
@@ -83,6 +127,10 @@ footer {
 /* centers the div horizontals */
 .center-this {
   margin: 0 auto;
+}
+
+.centerAll {
+  margin: auto auto auto auto;
 }
 
 .container {
