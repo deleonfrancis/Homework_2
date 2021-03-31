@@ -28,7 +28,6 @@ hr {
   background-color: #d3354a;
   margin-top: 5px;
   margin-bottom: 75px;
-
 }
 
 footer {
@@ -79,7 +78,7 @@ footer {
 }
 /* ================================= */
 /* =========== About =========== */
-#about-section{
+#about-section {
   /* background-color: #1a1c1d; */
   /* color: white; */
   margin: auto;
@@ -88,7 +87,6 @@ footer {
   width: 90%;
   text-align: center;
 }
-
 
 /* IDs */
 
@@ -115,6 +113,10 @@ footer {
 }
 
 /* Classes */
+
+.text-bg {
+  color: #876;
+}
 
 /* for font size of links in navbar */
 .link-text-size {
