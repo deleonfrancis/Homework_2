@@ -8,7 +8,7 @@ function About() {
     <Fragment>
       <Navbar />
 
-      <section id="about-section" className="flex-fill p-3 py-5 bg-light">
+      <section id="about-section" className="flex-fill p-3 py-5 bg-light shadow-lg">
         <h1 className="mb-0">About</h1>
         <hr />
         <div className="row">

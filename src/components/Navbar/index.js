@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Depending on the current path, this component sets the "active" className on the appropriate navigation link item
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white p-2">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light p-2">
       {/* <h1 className="py-2 ml-3 mb-0" id="my-name">
         Deleon Xavier Francis
       </h1> */}
@@ -74,9 +74,9 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="/"
+              to="/about"
               className={
-                window.location.pathname === "/" ||
+                // window.location.pathname === "/" ||
                 window.location.pathname === "/about"
                   ? "nav-link active"
                   : "nav-link"
