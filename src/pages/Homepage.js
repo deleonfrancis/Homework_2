@@ -10,7 +10,7 @@ function Homepage() {
       </div>
 
       <Link to="/about" className="learnBtn text-white">
-        Learn more
+        LEARN MORE
       </Link>
     </section>
   );

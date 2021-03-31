@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white p-2">
-      <h1 className="py-2 ml-3 mb-0" id="my-name">
+      {/* <h1 className="py-2 ml-3 mb-0" id="my-name">
         Deleon Xavier Francis
-      </h1>
+      </h1> */}
       <button
         className="navbar-toggler"
         type="button"
@@ -24,6 +24,18 @@ function Navbar() {
         id="navbarNav"
       >
         <ul className="navbar-nav link-text-size">
+        <li className="nav-item">
+            <Link
+              to="/"
+              className={
+                window.location.pathname === "/resume"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Home
+            </Link>
+          </li>
           <li className="nav-item">
             <Link
               to="/resume"
