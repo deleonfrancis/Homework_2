@@ -98,7 +98,18 @@ footer {
   width: 50%;
   text-align: center;
 }
-
+/* ================================= */
+/* =========== Resume =========== */
+#portfolio-section{
+  /* background-color: #1a1c1d; */
+  /* color: white; */
+  margin: auto;
+  /* margin-top: 80px; */
+  /* padding: 80px; */
+  width: 90%;
+  text-align: center;
+}
+/* ================================= */
 /* IDs */
 
 /* for styling of my name in navbar */
