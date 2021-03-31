@@ -12,7 +12,7 @@ function Portfolio() {
   return (
     <Fragment>
       <Navbar />
-      <section id="portfolio-section" className="p-3 py-5 mt-1 bg-light">
+      <section id="portfolio-section" className="p-3 py-5 bg-light">
         <h1 className="pt-3 mb-0">Portfolio</h1>
         <hr />
             <div className="row center-this d-flex justify-content-center">

@@ -41,9 +41,9 @@ footer {
 
 /* =========== Homepage =========== */
 #welcome {
-  background-color: #1a1c1d;
-  color: white;
-  margin: auto;
+  /* background-color: #1a1c1d;
+  color: white; */
+  margin: 100px auto;
   /* margin-top: 80px; */
   padding: 80px;
   width: 80%;
@@ -63,7 +63,8 @@ footer {
 }
 
 .learnBtn {
-  border: 1px solid #fff;
+  border: 1px solid rgb(0, 165, 129);
+  color: rgb(0, 165, 129);
   display: inline-block;
   font-family: "Raleway", sans-serif;
   box-sizing: inherit;
@@ -75,13 +76,14 @@ footer {
 .learnBtn:hover {
   background-color: rgb(0, 165, 129);
   text-decoration: none;
+  color: white;
 }
 /* ================================= */
 /* =========== About =========== */
 #about-section {
   /* background-color: #1a1c1d; */
   /* color: white; */
-  margin: auto;
+  margin: 80px auto;
   /* margin-top: 80px; */
   /* padding: 80px; */
   width: 90%;
@@ -92,18 +94,22 @@ footer {
 #resume-section {
   /* background-color: #1a1c1d; */
   /* color: white; */
-  margin: auto;
+  margin: 80px auto;
   /* margin-top: 80px; */
   /* padding: 80px; */
   width: 50%;
   text-align: center;
 }
+.about-detail{
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+}
 /* ================================= */
 /* =========== Portfolio =========== */
-#portfolio-section{
+#portfolio-section {
   /* background-color: #1a1c1d; */
   /* color: white; */
-  margin: auto;
+  margin: 50px auto;
   /* margin-top: 80px; */
   /* padding: 80px; */
   width: 90%;
@@ -229,7 +235,7 @@ footer {
 
 .wrapper {
   min-height: 100%;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 /* @media */
