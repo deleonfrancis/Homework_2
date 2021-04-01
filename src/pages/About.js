@@ -12,7 +12,7 @@ function About() {
         <hr />
         <LinkButtons />
         <div className="row">
-          <div className="col-lg-5">
+          <div className="col-lg-6">
             <div className="">
               <img
                 className="rounded-circle"
