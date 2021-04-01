@@ -10,7 +10,7 @@ import Homepage from "./pages/Homepage";
 function App() {
   return (
     <Router >
-      <div className="App">
+      <div className="App3">
         <Wrapper>
           <Switch>
             <Route exact path="/" component={Homepage} />
