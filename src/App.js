@@ -1,6 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import "./css/portfolio.css";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "./css/styles.css";
 import Wrapper from "./components/Wrapper";
 import About from "./pages/About";
@@ -10,14 +9,18 @@ import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-    <Wrapper>
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/resume" component={Resume} />
-      </Switch>
-    </Wrapper>
+    <Router >
+      <div className="App">
+        <Wrapper>
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/resume" component={Resume} />
+          </Switch>
+        </Wrapper>
+      </div>
+    </Router>
   );
 }
 

@@ -36,15 +36,28 @@ const options = {
       {
         ticks: {
           beginAtZero: true,
+          callback: function(value) {
+            return (value ) + '%';
+        }
         },
       },
     ],
   },
+    legend: {
+        display: false
+    },
+    tooltips: {
+        callbacks: {
+           label: function(tooltipItem) {
+                  return tooltipItem.yLabel;
+           }
+        }
+    }
 }
 
 const HorizontalBarChart = () => (
   <>
-    <div className='header'>
+    <div className=''>
       <h3 className='text-bg'>Skills</h3>
     </div>
     <HorizontalBar data={data} options={options} />
