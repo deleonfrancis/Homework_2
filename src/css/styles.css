@@ -27,7 +27,6 @@ hr {
   border-width: 5px;
   background-color: #d3354a;
   margin-top: 5px;
-  margin-bottom: 75px;
 }
 
 footer {
@@ -156,7 +155,32 @@ footer {
 }
 
 /* ================================= */
-
+/* ============ Link Buttons =========== */
+#link-btns-div{
+  margin-bottom: 50px;
+}
+.linkBtn {
+  border: 1px solid rgb(0, 165, 129);
+  color: rgb(0, 165, 129);
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  box-sizing: inherit;
+  cursor: pointer;
+  font-size: 13pt;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+.linkBtn:hover {
+  background-color: rgb(0, 165, 129);
+  text-decoration: none;
+  color: white;
+}
+.linkBtnOn:hover {
+  background-color: rgb(0, 165, 129);
+  text-decoration: none;
+  color: white;
+}
+/* ================================= */
 /* IDs */
 
 /* for styling of my name in navbar */
@@ -185,6 +209,10 @@ footer {
 
 .text-bg {
   color: #876;
+}
+
+.text-red {
+  color:#d3354a;
 }
 
 /* for font size of links in navbar */

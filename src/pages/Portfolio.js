@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Navbar from "../components/Navbar";
+import LinkButtons from "../components/LinkButtons"
 import Project from "../components/Project";
 import donde_login from "../images/screenshots/donde_login.png";
 import weatherdash1 from "../images/screenshots/weatherdash1.png";
@@ -11,10 +11,10 @@ import mood_1 from "../images/gifs/mood_1.gif";
 function Portfolio() {
   return (
     <Fragment>
-      <Navbar />
-      <section id="portfolio-section" className="p-3 py-5 bg-light">
+      <section id="portfolio-section" className="p-3 py-5 bg-light shadow-lg">
         <h1 className="pt-3 mb-0">Portfolio</h1>
         <hr />
+        <LinkButtons />
             <div className="row center-this d-flex justify-content-center">
               {/* Project 1 */}
               <Project

@@ -1,16 +1,16 @@
 import React, { Fragment } from "react";
-import Navbar from "../components/Navbar";
 import HorizontalBarChart from "../components/HorizontalBarChart";
 import xavier_picture from "../images/my_picture/xavier_picture.jpeg";
 import SocialMedia from "../components/SocialMedia";
+import LinkButtons from "../components/LinkButtons";
 
 function About() {
   return (
     <Fragment>
-      <Navbar />
       <section id="about-section" className="flex-fill p-3 py-5 bg-light shadow-lg">
         <h1 className="mb-0">About</h1>
         <hr />
+        <LinkButtons />
         <div className="row">
           <div className="col-lg-5">
             <div className="">
