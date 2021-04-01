@@ -5,15 +5,17 @@ function Project(props) {
   const img = props.src;
   return (
       <div
-        style={{ width: "300px", height: "300px"}}
+        style={{ width: "400px", height: "205px", margin: "10px"}}
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
+        className=""
       >
         {!isShown && (
           <img
             src={props.src}
             alt={`${props.name} pic`}
             className="image-fluid port-image"
+            style={{width:"100%"}}
           />
         )}
         {isShown && (
