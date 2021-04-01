@@ -12,7 +12,7 @@ function Portfolio() {
   return (
     <Fragment>
       <section id="portfolio-section" className="p-3 py-5 bg-light shadow-lg">
-        <h1 className="pt-3 mb-0">Portfolio</h1>
+        <h1 className="pt-3 rale-text mb-0">Portfolio</h1>
         <hr />
         <LinkButtons />
             <div className="row center-this d-flex justify-content-center">

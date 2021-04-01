@@ -6,7 +6,7 @@ function Resume() {
   return (
     <Fragment>
       <section id="resume-section" class="flex-fill p-3 py-5 bg-light shadow-lg">
-          <h1 class="pt-3 mb-0">Resume</h1>
+          <h1 class="rale-text pt-3 mb-0">Resume</h1>
           <hr />
           <LinkButtons />
           <div class="col-md-12 text-center">

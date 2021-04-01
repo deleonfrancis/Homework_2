@@ -8,7 +8,7 @@ function About() {
   return (
     <Fragment>
       <section id="about-section" className="flex-fill p-3 py-5 bg-light shadow-lg">
-        <h1 className="mb-0">About</h1>
+        <h1 className="mb-0 rale-text">About</h1>
         <hr />
         <LinkButtons />
         <div className="row">
@@ -21,7 +21,7 @@ function About() {
                 height={250}
                 width={250}
               />
-              <h4 className="text-bg  my-3">About Me</h4>
+              <h3 className="text-bg my-3">About Me</h3>
               <div style={{ width: "60%", margin: "auto" }}>
                 <p className="about-detail">
                   I'm a detail-oriented, diligent, and self-motivated Full Stack Developer based
