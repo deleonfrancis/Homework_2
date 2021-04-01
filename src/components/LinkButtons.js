@@ -6,14 +6,18 @@ function LinkButtons() {
     <div id="link-btns-div" className="">
 
       {/* Home Link */}
-      <Link to="/" className={window.location.pathname === "/" ? "px-2 text-link " : "px-2"}>
+      <Link to="/" 
+      // className={window.location.pathname === "/" ? "px-2 text-link " : "px-2"}
+      className="px-2 text-link"
+      >
         Home
       </Link>
 
       {/* About Link */}
       <Link
         to="/about"
-        className={window.location.pathname === "/about" ? "px-2 text-link" : "px-2 text-link"}
+        // className={window.location.pathname === "/about" ? "px-2 text-link" : "px-2 text-link"}
+        className="px-2 text-link"
       >
         About
       </Link>
@@ -21,7 +25,8 @@ function LinkButtons() {
       {/* Portfolio Link */}
       <Link
         to="/portfolio"
-        className={window.location.pathname === "/portfolio" ? "px-2 text-link" : "px-2 text-link"}
+        // className={window.location.pathname === "/portfolio" ? "px-2 text-link" : "px-2 text-link"}
+        className="px-2 text-link"
       >
         Portfolio
       </Link>
@@ -29,7 +34,8 @@ function LinkButtons() {
       {/* Resume Link */}
       <Link
         to="/resume"
-        className={window.location.pathname === "/resume" ? "px-2 text-link" : "px-2 text-link"}
+        // className={window.location.pathname === "/resume" ? "px-2 text-link" : "px-2 text-link"}
+        className="px-2 text-link"
       >
         Resume
       </Link>
