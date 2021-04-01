@@ -136,11 +136,11 @@ footer {
 }
 
 .port-image {
-  /* vertical-align: middle;
+  vertical-align: middle;
   width: 100%;
   height: auto;
   background-size: cover;
-  max-width: 828px; */
+  max-width: 828px;
   
 }
 
@@ -161,6 +161,16 @@ footer {
 /* ============ Link Buttons =========== */
 #link-btns-div{
   margin-bottom: 50px;
+}
+.text-link {
+  color: #876;
+}
+.text-link:hover {
+  background-color: #d3354a;;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
 .linkBtn {
   border: 1px solid rgb(0, 165, 129);

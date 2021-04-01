@@ -15,7 +15,7 @@ function Project(props) {
             src={props.src}
             alt={`${props.name} pic`}
             className="image-fluid port-image"
-            style={{width:"100%"}}
+            style={{}}
           />
         )}
         {isShown && (
