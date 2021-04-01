@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import LinkButtons from "../components/LinkButtons"
-import resume_mar16_2021 from "../files/resume/resume_mar16_2021.pdf";
+import francis_resume from "../files/resume/francis_resume.pdf"
 
 function Resume() {
   return (
@@ -10,11 +10,11 @@ function Resume() {
           <hr />
           <LinkButtons />
           <div class="col-md-12 text-center">
-              <a href={resume_mar16_2021} download="Francis_resume.pdf">
+              <a href={francis_resume} download="Francis_resume.pdf">
                 <i class="fas fa-cloud-download-alt fa-3x text-dark"></i>
               </a>
               <br />
-              <a href={resume_mar16_2021} download="Francis_resume.pdf">
+              <a href={francis_resume} download="Francis_resume.pdf">
                 Click to download
               </a>
             </div>
