@@ -16,7 +16,8 @@ function Portfolio() {
         <h1 className="pt-3 rale-text mb-0">Portfolio</h1>
         <hr />
         <LinkButtons />
-            <div className="row center-this d-flex justify-content-center">
+        <FadeIn delay={500} duration={1000}>
+        <div className="row center-this d-flex justify-content-center">
               {/* Project 1 */}
               <Project
                 name="Dondé"
@@ -69,6 +70,7 @@ function Portfolio() {
                 website="https://bokosyk.github.io/Mood/"
               />
             </div>
+        </FadeIn>
       </section>
     </FadeIn>
   );

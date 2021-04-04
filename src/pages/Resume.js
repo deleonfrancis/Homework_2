@@ -12,10 +12,10 @@ function Resume() {
           <LinkButtons />
           <div class="col-md-12 text-center">
               <a href={francis_resume} download="Francis_resume.pdf">
-                <i class="fas fa-cloud-download-alt fa-3x text-dark"></i>
+                <i class="fas fa-cloud-download-alt fa-3x text-secondary"></i>
               </a>
               <br />
-              <a href={francis_resume} download="Francis_resume.pdf">
+              <a className="text-bg" href={francis_resume} download="Francis_resume.pdf">
                 Click to download
               </a>
             </div>
