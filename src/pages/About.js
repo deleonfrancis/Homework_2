@@ -1,5 +1,5 @@
 import React from "react";
-import { useMediaQuery } from 'react-responsive'
+
 import HorizontalBarChart from "../components/HorizontalBarChart";
 import xavier_picture from "../images/my_picture/xavier_picture.jpeg";
 import SocialMedia from "../components/SocialMedia";
@@ -8,11 +8,7 @@ import FadeIn from "../components/FadeIn";
 import HamburgerBtn from "../components/HamburgerBtn";
 import SkillsIcons from "../components/SkillsIcons";
 
-function About() {
-  const isLargerThanIPad = useMediaQuery({
-    query: '(min-device-width: 768px)'
-  })
-  const isSmallerThanIPad = useMediaQuery({ query: '(max-width: 767px)' })
+function About({isLargerThanIPad, isSmallerThanIPad }) {
   return (
     <FadeIn>
       <section id="about-section" className="flex-fill p-3 py-5 bg-light shadow-lg">

@@ -1,15 +1,17 @@
 import React from "react";
+import HamburgerBtn from "../components/HamburgerBtn" 
 import FadeIn from "../components/FadeIn";
 import LinkButtons from "../components/LinkButtons"
 import francis_resume from "../files/resume/francis_resume.pdf"
 
-function Resume() {
+function Resume({isLargerThanIPad, isSmallerThanIPad}) {
   return (
     <FadeIn>
       <section id="resume-section" class="flex-fill p-3 py-5 bg-light shadow-lg">
           <h1 class="rale-text pt-3 mb-0">Resume</h1>
           <hr />
-          <LinkButtons />
+          {isLargerThanIPad && <LinkButtons />}
+        {isSmallerThanIPad && <HamburgerBtn />}
           <div class="col-md-12 text-center">
               <a href={francis_resume} download="Francis_resume.pdf">
                 <i class="fas fa-cloud-download-alt fa-3x text-secondary"></i>
