@@ -23,7 +23,7 @@ p {
 }
 
 hr {
-  width: 10%;
+  width: 15%;
   border-width: 5px;
   background-color: #d3354a;
   margin-top: 5px;
@@ -90,7 +90,7 @@ footer {
   width: 90%;
   text-align: center;
 }
-.rale-text{
+.rale-text {
   font-family: "Raleway", sans-serif;
 }
 /* ================================= */
@@ -104,7 +104,7 @@ footer {
   width: 50%;
   text-align: center;
 }
-.about-detail{
+.about-detail {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
 }
@@ -146,7 +146,15 @@ footer {
   height: auto;
   background-size: cover;
   max-width: 828px;
-  
+  position: relative;
+  z-index: 1;
+}
+
+.port-icon{
+  position:absolute;
+  top: 10%;
+  left: 90%;
+  z-index: 2;
 }
 
 .project-title {
@@ -162,20 +170,20 @@ footer {
   font-size: 15px;
 }
 
-.transition-eio{
+.transition-eio {
   transition: all 0.5s;
 }
 
 /* ================================= */
 /* ============ Link Buttons =========== */
-#link-btns-div{
+#link-btns-div {
   margin-bottom: 50px;
 }
 .text-link {
   color: #876;
 }
 .text-link:hover {
-  background-color: #d3354a;;
+  background-color: #d3354a;
   transition: all 0.5s;
   text-decoration: none;
   color: white;
@@ -234,7 +242,7 @@ footer {
 }
 
 .text-red {
-  color:#d3354a;
+  color: #d3354a;
 }
 
 /* for font size of links in navbar */
