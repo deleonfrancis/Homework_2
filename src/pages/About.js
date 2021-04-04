@@ -1,41 +1,50 @@
 import React from "react";
+import { useMediaQuery } from 'react-responsive'
 import HorizontalBarChart from "../components/HorizontalBarChart";
 import xavier_picture from "../images/my_picture/xavier_picture.jpeg";
 import SocialMedia from "../components/SocialMedia";
 import LinkButtons from "../components/LinkButtons";
 import FadeIn from "../components/FadeIn";
+import HamburgerBtn from "../components/HamburgerBtn";
+import SkillsIcons from "../components/SkillsIcons";
 
 function About() {
+  const isLargerThanIPad = useMediaQuery({
+    query: '(min-device-width: 768px)'
+  })
+  const isSmallerThanIPad = useMediaQuery({ query: '(max-width: 767px)' })
   return (
     <FadeIn>
       <section id="about-section" className="flex-fill p-3 py-5 bg-light shadow-lg">
         <h1 className="mb-0 rale-text">About</h1>
         <hr />
-        <LinkButtons />
+        {isLargerThanIPad && <LinkButtons />}
+        {isSmallerThanIPad && <HamburgerBtn />}
         <div className="row">
           <div className="col-lg-6">
             <div className="">
               <img
-                className="rounded-circle"
+                className="img-fluid"
                 src={xavier_picture}
                 alt="Photograph of Xavier"
-                height={250}
-                width={250}
+                style={{width:"150px", borderRadius: "10px"}}
               />
               <h3 className="text-bg my-3">About Me</h3>
-              <div style={{ width: "60%", margin: "auto" }}>
+              <div style={{ width: "60%", margin: "auto auto 20px" }}>
                 <p className="about-detail">
                   I'm a detail-oriented, diligent, and self-motivated Full Stack Developer based
                   in Orlando, Florida.
                 </p>
                 <SocialMedia />
-                <h5 className="text-dark m-0">E-mail: <span className="text-bg">dxfrancis.coding@gmail.com</span></h5>
+                <h5 className="text-dark m-0">E-mail: <span className="text-email" style={{wordWrap: "break-word"}}>dxfrancis.coding@gmail.com</span></h5>
                 
               </div>
             </div>
           </div>
           <div className="col-lg-5">
-            <HorizontalBarChart />
+          {isLargerThanIPad && <HorizontalBarChart /> }
+          {isSmallerThanIPad && <SkillsIcons />}
+            
           </div>
         </div>
       </section>

@@ -93,6 +93,11 @@ footer {
 .rale-text {
   font-family: "Raleway", sans-serif;
 }
+.text-email{
+  word-wrap: break-word;
+  color: #876;
+  font-size: 18px;
+}
 /* ================================= */
 /* =========== Resume =========== */
 #resume-section {
@@ -107,6 +112,11 @@ footer {
 .about-detail {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
+  word-wrap: break-word;
+}
+.skills-no-icon {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
 }
 /* ================================= */
 /* =========== Portfolio =========== */
@@ -258,6 +268,9 @@ footer {
   padding: 0%;
 }
 
+.text-purple{
+  color: purple;
+}
 /* makes h1 Contact, Portfolio, and About green */
 .text-green {
   color: #1f6f8b;
