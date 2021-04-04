@@ -1,12 +1,13 @@
-import React, { Fragment } from "react";
+import React from "react";
 import HorizontalBarChart from "../components/HorizontalBarChart";
 import xavier_picture from "../images/my_picture/xavier_picture.jpeg";
 import SocialMedia from "../components/SocialMedia";
 import LinkButtons from "../components/LinkButtons";
+import FadeIn from "../components/FadeIn";
 
 function About() {
   return (
-    <Fragment>
+    <FadeIn>
       <section id="about-section" className="flex-fill p-3 py-5 bg-light shadow-lg">
         <h1 className="mb-0 rale-text">About</h1>
         <hr />
@@ -38,7 +39,7 @@ function About() {
           </div>
         </div>
       </section>
-    </Fragment>
+    </FadeIn>
   );
 }
 

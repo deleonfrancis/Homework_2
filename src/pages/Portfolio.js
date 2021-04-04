@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import LinkButtons from "../components/LinkButtons"
 import Project from "../components/Project";
 import donde_login from "../images/screenshots/donde_login.png";
@@ -7,10 +7,11 @@ import dayGif from "../images/screenshots/dayGif.png";
 import burgers from "../images/screenshots/burgers.png";
 import ed_screenshot from "../images/screenshots/ed_screenshot.png";
 import mood_1 from "../images/gifs/mood_1.gif";
+import FadeIn from "../components/FadeIn";
 
 function Portfolio() {
   return (
-    <Fragment>
+    <FadeIn>
       <section id="portfolio-section" className="p-3 py-5 bg-light shadow-lg">
         <h1 className="pt-3 rale-text mb-0">Portfolio</h1>
         <hr />
@@ -69,7 +70,7 @@ function Portfolio() {
               />
             </div>
       </section>
-    </Fragment>
+    </FadeIn>
   );
 }
 

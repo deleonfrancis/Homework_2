@@ -47,7 +47,9 @@ footer {
   padding: 80px;
   width: 80%;
   text-align: center;
+  transition-timing-function: ease-in-out;
 }
+
 .welcome-text {
   font-size: 35px;
   font-family: "Raleway", sans-serif;
@@ -158,6 +160,10 @@ footer {
   color: #d3354a;
   margin-bottom: 10px;
   font-size: 15px;
+}
+
+.transition-eio{
+  transition: all 0.5s;
 }
 
 /* ================================= */
