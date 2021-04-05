@@ -32,7 +32,7 @@ function About({isLargerThanIPad, isSmallerThanIPad }) {
                   in Orlando, Florida.
                 </p>
                 <SocialMedia />
-                <h5 className="text-dark m-0">E-mail: <span className="text-email" style={{wordWrap: "break-word"}}>dxfrancis.coding@gmail.com</span></h5>
+                <h5 className="text-dark m-0">E-mail: <span style={{wordWrap: "break-word"}}> <a href="mailto:dxfrancis.coding@gmail.com" className="text-email">dxfrancis.coding@gmail.com</a></span></h5>
                 
               </div>
             </div>

@@ -129,6 +129,15 @@ footer {
   width: 90%;
   text-align: center;
 }
+
+.imgDiv {
+  float: left;
+}
+
+.project-image{
+display: block;
+}
+
 .to-site-btn {
   border: 1px solid #d3354a;
   display: inline-block;

@@ -9,14 +9,14 @@ function Project(props) {
       style={{ width: "400px", height: "205px", margin: "10px", position: "relative" }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className=""
+      className="imgDiv"
     >
       {!isHovered && (
         <div style={{position: "absolute"}}>
           <img
             src={props.src}
             alt={`${props.name} pic`}
-            className="image-fluid port-image"
+            className="image-fluid port-image project-image"
           />
           <div className="d-flex justify-content-end">
           <i className="fas fa-info-circle port-icon text-dark"></i>

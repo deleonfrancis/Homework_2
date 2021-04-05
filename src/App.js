@@ -12,13 +12,13 @@ function App() {
   const isLargerThanIPad = useMediaQuery({
     query: '(min-device-width: 768px)'
   })
-  const isSmallerThanIPad = useMediaQuery({ query: '(max-width: 767px)' })
+  const isSmallerThanIPad = useMediaQuery({ query: '(max-device-width: 767px)' })
   return (
     <Router >
       <div className="App1">
         <Wrapper>
           <Switch>
-            <Route exact path="/" component = {Homepage} />
+            <Route exact path="/" render={(props)=>(<Homepage isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
             <Route exact path="/about" render={(props)=>(<About isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
             <Route exact path="/portfolio" render={(props)=>(<Portfolio isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
             <Route exact path="/resume" render={(props)=>(<Resume isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
