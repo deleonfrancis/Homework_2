@@ -90,12 +90,27 @@ footer {
   width: 90%;
   text-align: center;
 }
+.about-detail {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+.skills-no-icon {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
 .rale-text {
   font-family: "Raleway", sans-serif;
 }
 .text-email{
   word-wrap: break-word;
   color: #876;
+  font-size: 18px;
+}
+.text-email:hover{
+  word-wrap: break-word;
+  /* color: #876; */
+  color: rgb(0, 165, 129);
   font-size: 18px;
 }
 /* ================================= */
@@ -109,14 +124,11 @@ footer {
   width: 50%;
   text-align: center;
 }
-.about-detail {
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  word-wrap: break-word;
+.resume-download{
+  color: #876;
 }
-.skills-no-icon {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
+.resume-download:hover{
+  color: rgb(0, 165, 129);
 }
 /* ================================= */
 /* =========== Portfolio =========== */
@@ -218,6 +230,18 @@ display: block;
   transition: all 0.5s;
   text-decoration: none;
   color: white;
+  padding: 5px;
+}
+.text-link-active {
+  transition: all 0.5s;
+  text-decoration: none;
+  color: #d3354a;
+  padding: 5px;
+}
+.text-link-active:hover {
+  transition: all 0.5s;
+  text-decoration: none;
+  color: #d3354a;
   padding: 5px;
 }
 .linkBtn {

@@ -16,7 +16,7 @@ function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {
       <section id={isLargerThanIPad ? "portfolio-section" : "portfolio-section-mobile" } className="p-3 py-5 bg-light shadow-lg">
         <h1 className="pt-3 rale-text mb-0">Portfolio</h1>
         <hr />
-        {isLargerThanIPad && <LinkButtons />}
+        {isLargerThanIPad && <LinkButtons about="px-2 text-link" portfolio="px-2 text-link-active" resume="px-2 text-link" />}
         {isSmallerThanIPad && <HamburgerBtn />}
         <FadeIn delay={500} duration={1000}>
         <div className="row center-this d-flex justify-content-center">

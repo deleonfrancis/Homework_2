@@ -14,7 +14,7 @@ function About({isLargerThanIPad, isSmallerThanIPad }) {
       <section id="about-section" className="flex-fill p-3 py-5 bg-light shadow-lg">
         <h1 className="mb-0 rale-text">About</h1>
         <hr />
-        {isLargerThanIPad && <LinkButtons />}
+        {isLargerThanIPad && <LinkButtons about="px-2 text-link-active" portfolio="px-2 text-link" resume="px-2 text-link" />}
         {isSmallerThanIPad && <HamburgerBtn />}
         <div className="row">
           <div className="col-lg-6">
