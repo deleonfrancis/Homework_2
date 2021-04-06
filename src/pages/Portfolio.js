@@ -7,7 +7,7 @@ import weatherdash1 from "../images/screenshots/weatherdash1.png";
 import dayGif from "../images/screenshots/dayGif.png";
 import burgers from "../images/screenshots/burgers.png";
 import ed_screenshot from "../images/screenshots/ed_screenshot.png";
-import mood_1 from "../images/gifs/mood_1.gif";
+import mood_1 from "../images/screenshots/mood_1.png";
 import FadeIn from "../components/FadeIn";
 
 function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {

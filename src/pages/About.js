@@ -28,7 +28,7 @@ function About({isLargerThanIPad, isSmallerThanIPad }) {
               <h3 className="text-bg my-3">About Me</h3>
               <div style={{ width: "60%", margin: "auto auto 20px" }}>
                 <p className="about-detail">
-                  I'm a detail-oriented, diligent, and self-motivated Full Stack Developer based
+                  I'm a detail-oriented, diligent, and self-motivated Full Stack Web Developer based
                   in Orlando, Florida.
                 </p>
                 <p className="about-detail">
