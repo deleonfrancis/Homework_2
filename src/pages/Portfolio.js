@@ -13,7 +13,7 @@ import FadeIn from "../components/FadeIn";
 function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {
   return (
     <FadeIn>
-      <section id="portfolio-section" className="p-3 py-5 bg-light shadow-lg">
+      <section id={isLargerThanIPad ? "portfolio-section" : "portfolio-section-mobile" } className="p-3 py-5 bg-light shadow-lg">
         <h1 className="pt-3 rale-text mb-0">Portfolio</h1>
         <hr />
         {isLargerThanIPad && <LinkButtons />}
@@ -27,6 +27,8 @@ function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {
                 src={donde_login}
                 repo="https://github.com/jmasone15/travel-planner-project"
                 website="https://dondetravel.herokuapp.com/"
+                isLargerThanIPad={isLargerThanIPad}
+                isSmallerThanIPad={isSmallerThanIPad}
               />
               {/* Project 2 */}
               <Project
@@ -35,6 +37,8 @@ function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {
                 src={weatherdash1}
                 repo="https://github.com/deleonfrancis/Weather_Dashboard"
                 website="https://deleonfrancis.github.io/Weather_Dashboard/"
+                isLargerThanIPad={isLargerThanIPad}
+                isSmallerThanIPad={isSmallerThanIPad}
               />
 
               {/* Project 3 */}
@@ -44,6 +48,8 @@ function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {
                 detail="A time sensitive to do list application"
                 repo="https://github.com/deleonfrancis/Work_Day_Scheduler"
                 website="https://deleonfrancis.github.io/Work_Day_Scheduler/"
+                isLargerThanIPad={isLargerThanIPad}
+                isSmallerThanIPad={isSmallerThanIPad}
               />
             </div>
             <div className="row center-this d-flex justify-content-center m-1">
@@ -54,6 +60,8 @@ function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {
                 src={burgers}
                 repo="https://github.com/deleonfrancis/Burgers_logger"
                 website="https://evening-river-12924.herokuapp.com/"
+                isLargerThanIPad={isLargerThanIPad}
+                isSmallerThanIPad={isSmallerThanIPad}
               />
                {/* Project 5 */}
               <Project
@@ -62,6 +70,8 @@ function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {
                 src={ed_screenshot}
                 repo="https://github.com/deleonfrancis/Employee_Directory"
                 website="https://deleonfrancis.github.io/Employee_Directory/"
+                isLargerThanIPad={isLargerThanIPad}
+                isSmallerThanIPad={isSmallerThanIPad}
               />
               {/* Project 6 */}
               <Project
@@ -70,6 +80,8 @@ function Portfolio({isLargerThanIPad, isSmallerThanIPad}) {
                 src={mood_1}
                 repo="https://github.com/Bokosyk/Mood"
                 website="https://bokosyk.github.io/Mood/"
+                isLargerThanIPad={isLargerThanIPad}
+                isSmallerThanIPad={isSmallerThanIPad}
               />
             </div>
         </FadeIn>

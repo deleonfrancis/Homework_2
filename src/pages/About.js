@@ -31,6 +31,9 @@ function About({isLargerThanIPad, isSmallerThanIPad }) {
                   I'm a detail-oriented, diligent, and self-motivated Full Stack Developer based
                   in Orlando, Florida.
                 </p>
+                <p className="about-detail">
+                  Let's create something breathtaking together.
+                </p>
                 <SocialMedia />
                 <h5 className="text-dark m-0">E-mail: <span style={{wordWrap: "break-word"}}> <a href="mailto:dxfrancis.coding@gmail.com" className="text-email">dxfrancis.coding@gmail.com</a></span></h5>
                 

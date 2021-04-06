@@ -129,7 +129,13 @@ footer {
   width: 90%;
   text-align: center;
 }
-
+#portfolio-section-mobile {
+  /* margin: 50px auto; */
+  /* margin-top: 80px; */
+  /* padding: 80px; */
+  width: 100%;
+  text-align: center;
+}
 .imgDiv {
   float: left;
 }
@@ -188,7 +194,13 @@ display: block;
   margin-bottom: 10px;
   font-size: 15px;
 }
-
+.project-detail-mobile {
+  width: 90%;
+  margin: 0 auto 5px;
+  color: #876;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
 .transition-eio {
   transition: all 0.5s;
 }
