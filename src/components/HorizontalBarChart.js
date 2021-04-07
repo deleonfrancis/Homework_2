@@ -6,22 +6,14 @@ const data = {
   datasets: [
     {
       label: 'Skill Level',
-      data: [75, 75, 80, 95, 90, 75, 75, 70, 85, 95],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.3)',
-        'rgba(54, 162, 235, 0.3)',
-        'rgba(255, 206, 86, 0.3)',
-        'rgba(75, 192, 192, 0.3)',
-        'rgba(153, 102, 255, 0.3)',
-        'rgba(255, 159, 64, 0.3)',
-        'rgba(255, 99, 132, 0.3)',
-        'rgba(54, 162, 235, 0.3)',
-        'rgba(255, 206, 86, 0.3)',
-        'rgba(75, 192, 192, 0.3)',
-      ],
+      data: [75, 75, 80, 95, 90, 80, 85, 80, 85, 95],
+      backgroundColor: function(labels){
+        return 'rgba(139, 99, 75, 0.3)'
+      }
     },
   ],
-}
+  
+} 
 
 const options = {
   scales: {
@@ -49,7 +41,7 @@ const options = {
     tooltips: {
         callbacks: {
            label: function(tooltipItem) {
-                  return tooltipItem.yLabel;
+                  return tooltipItem.xLabel + '%';
            }
         }
     }
