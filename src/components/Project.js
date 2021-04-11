@@ -67,7 +67,7 @@ function Project({
           )}
           {isHovered && (
             <FadeIn>
-              <>
+              <div >
                 <h3 className="project-title">{name}</h3>
                 <p className="project-detail">{detail}</p>
                 <div
@@ -80,6 +80,7 @@ function Project({
                     rel="noreferrer"
                     className="to-site-btn btn-block text-bg"
                     tabIndex={-1}
+                    
                   >
                     Repository
                   </a>
@@ -98,7 +99,7 @@ function Project({
                     Website
                   </a>
                 </div>
-              </>
+              </div>
             </FadeIn>
           )}
         </div>

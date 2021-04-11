@@ -50,7 +50,7 @@ const options = {
 const HorizontalBarChart = () => (
   <>
     <div className=''>
-      <h3 className='text-bg'>Skills</h3>
+      <h2 className='text-bg about-label'>Skills</h2>
     </div>
     <HorizontalBar data={data} options={options} />
   </>

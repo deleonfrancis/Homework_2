@@ -11,11 +11,9 @@ html {
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: #876;
-  /* color: #3f3d3d */
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  color: #ad283a;
 }
 
 p {
@@ -25,7 +23,7 @@ p {
 hr {
   width: 15%;
   border-width: 5px;
-  background-color: #d3354a;
+  background-color: #ebdcde;
   margin-top: 5px;
 }
 
@@ -102,16 +100,35 @@ footer {
 .rale-text {
   font-family: "Raleway", sans-serif;
 }
-.text-email{
+.text-email {
   word-wrap: break-word;
-  color: #876;
+  color: rgb(170, 21, 21);
   font-size: 18px;
+  font-family: "Raleway", sans-serif;
 }
-.text-email:hover{
+.text-email:hover {
   word-wrap: break-word;
   /* color: #876; */
   color: rgb(0, 165, 129);
   font-size: 18px;
+}
+.email-label {
+  font-size: 20px;
+}
+.about-label {
+  font-size: 20px;
+}
+.link-detail {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  /* word-wrap: break-word; */
+  color: black;
+}
+.link-detail:hover {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  /* word-wrap: break-word; */
+  color: rgb(0, 165, 129);
 }
 /* ================================= */
 /* =========== Resume =========== */
@@ -124,10 +141,10 @@ footer {
   width: 50%;
   text-align: center;
 }
-.resume-download{
-  color: #876;
+.resume-download {
+  color: #667d88;
 }
-.resume-download:hover{
+.resume-download:hover {
   color: rgb(0, 165, 129);
 }
 /* ================================= */
@@ -152,8 +169,8 @@ footer {
   float: left;
 }
 
-.project-image{
-display: block;
+.project-image {
+  display: block;
 }
 
 .to-site-btn {
@@ -187,8 +204,8 @@ display: block;
   z-index: 1;
 }
 
-.port-icon{
-  position:absolute;
+.port-icon {
+  position: absolute;
   top: 10%;
   left: 90%;
   z-index: 2;
@@ -223,10 +240,10 @@ display: block;
   margin-bottom: 50px;
 }
 .text-link {
-  color: #876;
+  color: rgb(43, 58, 54);
 }
 .text-link:hover {
-  background-color: #d3354a;
+  background-color: rgb(0, 165, 129);
   transition: all 0.5s;
   text-decoration: none;
   color: white;
@@ -293,7 +310,7 @@ display: block;
 /* Classes */
 
 .text-bg {
-  color: #876;
+  color: rgb(99, 105, 104);
 }
 
 .text-red {
@@ -313,7 +330,7 @@ display: block;
   padding: 0%;
 }
 
-.text-purple{
+.text-purple {
   color: purple;
 }
 /* makes h1 Contact, Portfolio, and About green */

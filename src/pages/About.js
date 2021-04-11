@@ -25,7 +25,8 @@ function About({isLargerThanIPad, isSmallerThanIPad }) {
                 alt="Photograph of Xavier"
                 style={{width:"150px", borderRadius: "10px"}}
               />
-              <h3 className="text-bg my-3">About Me</h3>
+              <br/>
+              <h2 className="text-bg my-3 about-label">About Me</h2>
               <div style={{ width: "60%", margin: "auto auto 20px" }}>
                 <p className="about-detail">
                   I'm a detail-oriented, diligent, and self-motivated Full Stack Web Developer based
@@ -35,7 +36,7 @@ function About({isLargerThanIPad, isSmallerThanIPad }) {
                   Let's create something breathtaking together.
                 </p>
                 <SocialMedia />
-                <h5 className="text-dark m-0">E-mail: <span style={{wordWrap: "break-word"}}> <a href="mailto:dxfrancis.coding@gmail.com" className="text-email">dxfrancis.coding@gmail.com</a></span></h5>
+                <h3 className="text-dark m-0 email-label">E-mail: <span style={{wordWrap: "break-word"}}> <a href="mailto:dxfrancis.coding@gmail.com" className="text-email">dxfrancis.coding@gmail.com</a></span></h3>
                 
               </div>
             </div>

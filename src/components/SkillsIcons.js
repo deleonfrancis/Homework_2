@@ -4,7 +4,7 @@ function SkillsIcons() {
   return (
     <>
       <div>
-      <h3 className='text-bg'>Skills</h3>
+      <h2 className='text-bg about-label'>Skills</h2>
         <i className="fab fa-2x fa-js text-warning mx-2"></i>
         <i className="fab fa-2x fa-react text-primary mx-2"></i>
         <i className="fab fa-2x fa-node text-success mx-2"></i>
