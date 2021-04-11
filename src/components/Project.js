@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import FadeIn from "./FadeIn";
 
 function Project({
@@ -10,8 +10,32 @@ function Project({
   isLargerThanIPad,
   isSmallerThanIPad,
 }) {
-  const [isHovered, setIsHovered] = useState(false);
+  // eslint-disable-next-line
+  const handleKeyDown = useCallback(
+    e => {
+      if (e.keyCode === 40) {
+        // Down arrow
+        e.preventDefault();
+        console.log("down key pressed!");
+        // setCurrentFocus(currentFocus === size - 1 ? 0 : currentFocus + 1);
+      } else if (e.keyCode === 38) {
+        // Up arrow
+        e.preventDefault();
+        console.log("up key pressed!");
+        // setCurrentFocus(currentFocus === 0 ? size - 1 : currentFocus - 1);
+      }
+    },
+  );
 
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown, false);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown, false);
+    };
+  }, [handleKeyDown])
+
+  const [isHovered, setIsHovered] = useState(false);
+  
   return (
     <>
       {isLargerThanIPad && (
@@ -25,6 +49,9 @@ function Project({
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           className="imgDiv"
+          tabIndex={0}
+          onFocus={()=>setIsHovered(true)}
+          onBlur={()=>setIsHovered(false)}
         >
           {!isHovered && (
             <div style={{ position: "absolute" }}>
@@ -40,7 +67,7 @@ function Project({
           )}
           {isHovered && (
             <FadeIn>
-              <div className="">
+              <>
                 <h3 className="project-title">{name}</h3>
                 <p className="project-detail">{detail}</p>
                 <div
@@ -52,6 +79,7 @@ function Project({
                     target="_blank"
                     rel="noreferrer"
                     className="to-site-btn btn-block text-bg"
+                    tabIndex={-1}
                   >
                     Repository
                   </a>
@@ -65,11 +93,12 @@ function Project({
                     target="_blank"
                     rel="noreferrer"
                     className="to-site-btn btn-block text-bg"
+                    tabIndex={-1}
                   >
                     Website
                   </a>
                 </div>
-              </div>
+              </>
             </FadeIn>
           )}
         </div>
