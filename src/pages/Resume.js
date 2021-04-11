@@ -13,12 +13,8 @@ function Resume({isLargerThanIPad, isSmallerThanIPad}) {
           {isLargerThanIPad && <LinkButtons about="px-2 text-link" portfolio="px-2 text-link" resume="px-2 text-link-active" />}
         {isSmallerThanIPad && <HamburgerBtn />}
           <div className="col-md-12 text-center">
-              <a href={francis_resume} download="Francis_resume.pdf">
-                <i className="fas fa-cloud-download-alt fa-3x text-secondary"></i>
-              </a>
-              <br />
-              <a className="resume-download" href={francis_resume} download="Francis_resume.pdf">
-                Click to download
+              <a href={francis_resume} download="Francis_resume.pdf" className="link-detail">
+                <i className="fas fa-cloud-download-alt fa-3x text-secondary"></i> <br/> Click to download
               </a>
             </div>
       </section>
