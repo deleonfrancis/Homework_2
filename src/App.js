@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import Homepage from "./pages/Homepage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const isLargerThanIPad = useMediaQuery({
@@ -15,13 +16,14 @@ function App() {
   const isSmallerThanIPad = useMediaQuery({ query: '(max-device-width: 767px)' })
   return (
     <Router >
-      <div className="App1">
+      <div className="App">
         <Wrapper>
           <Switch>
             <Route exact path="/" render={(props)=>(<Homepage isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
             <Route exact path="/about" render={(props)=>(<About isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
             <Route exact path="/portfolio" render={(props)=>(<Portfolio isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
             <Route exact path="/resume" render={(props)=>(<Resume isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
+            <Route component={NotFound} />
           </Switch>
         </Wrapper>
       </div>
