@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function SocialMedia() {
     return (
-        <div className="row d-flex justify-content-center" //style={{margin:"10px auto"}}
+        <div className="row d-flex justify-content-center"
         >
             <div className="col-sm-6 col-md-4 text-center mb-2">
                 <Link to="https://github.com/deleonfrancis" target="_blank" rel="noreferrer" className="link-detail">
