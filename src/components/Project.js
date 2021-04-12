@@ -1,5 +1,7 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState } from "react";
 import FadeIn from "./FadeIn";
+import ProjectDetails from "./ProjectDetails";
+import ProjectDetailsSm from "./ProjectDetailsSm";
 
 function Project({
   name,
@@ -10,32 +12,9 @@ function Project({
   isLargerThanIPad,
   isSmallerThanIPad,
 }) {
-  // eslint-disable-next-line
-  const handleKeyDown = useCallback(
-    e => {
-      if (e.keyCode === 40) {
-        // Down arrow
-        e.preventDefault();
-        console.log("down key pressed!");
-        // setCurrentFocus(currentFocus === size - 1 ? 0 : currentFocus + 1);
-      } else if (e.keyCode === 38) {
-        // Up arrow
-        e.preventDefault();
-        console.log("up key pressed!");
-        // setCurrentFocus(currentFocus === 0 ? size - 1 : currentFocus - 1);
-      }
-    },
-  );
-
-  useEffect(() => {
-    document.addEventListener("keydown", handleKeyDown, false);
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown, false);
-    };
-  }, [handleKeyDown])
 
   const [isHovered, setIsHovered] = useState(false);
-  
+
   return (
     <>
       {isLargerThanIPad && (
@@ -50,8 +29,8 @@ function Project({
           onMouseLeave={() => setIsHovered(false)}
           className="imgDiv"
           tabIndex={0}
-          onFocus={()=>setIsHovered(true)}
-          onBlur={()=>setIsHovered(false)}
+          onFocus={() => setIsHovered(true)}
+          onBlur={() => setIsHovered(false)}
         >
           {!isHovered && (
             <div style={{ position: "absolute" }}>
@@ -67,38 +46,11 @@ function Project({
           )}
           {isHovered && (
             <FadeIn>
-              <div >
+              <div
+              >
                 <h3 className="project-title">{name}</h3>
                 <p className="project-detail">{detail}</p>
-                <div
-                  className="btn-block"
-                  style={{ width: "75%", margin: "0 auto 5px" }}
-                >
-                  <a
-                    href={repo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="to-site-btn btn-block text-bg"
-                    tabIndex={-1}
-                    
-                  >
-                    Repository
-                  </a>
-                </div>
-                <div
-                  className="btn-block"
-                  style={{ width: "75%", margin: "0 auto 5px" }}
-                >
-                  <a
-                    href={website}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="to-site-btn btn-block text-bg"
-                    tabIndex={-1}
-                  >
-                    Website
-                  </a>
-                </div>
+                <ProjectDetails repo={repo} website={website} />
               </div>
             </FadeIn>
           )}
@@ -116,37 +68,12 @@ function Project({
                 />
               </div>
             </div>
-            <div className="col-12">
-              <h6 className="project-title pt-1">{name}</h6>
-              <p className="project-detail-mobile">{detail}</p>
-              <div
-                className="btn-block "
-                style={{ width: "75%", margin: "0 auto 5px" }}
-              >
-                <a
-                  href={repo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="to-site-btn btn-block text-bg"
-                >
-                  Repository
-                </a>
-              </div>
-              <div
-                className="btn-block"
-                style={{ width: "75%", margin: "0 auto 5px" }}
-              >
-                <a
-                  href={website}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="to-site-btn btn-block text-bg"
-                >
-                  Website
-                </a>
-              </div>
-              <hr className="mt-4" style={{width:"100%"}} />
-            </div>
+            <ProjectDetailsSm
+              name={name}
+              detail={detail}
+              repo={repo}
+              website={website}
+            />
           </div>
         </FadeIn>
       )}

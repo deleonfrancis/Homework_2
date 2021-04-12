@@ -183,7 +183,7 @@ footer {
   padding: 10px 20px;
   transition: all 0.5s;
 }
-.to-site-btn:hover {
+.to-site-btn:hover, .to-site-btn:focus {
   background-color: #d3354a;
   text-decoration: none;
   color: white;
@@ -234,6 +234,7 @@ footer {
   transition: all 0.5s;
 }
 
+
 /* ================================= */
 /* ============ Link Buttons =========== */
 #link-btns-div {
@@ -254,6 +255,7 @@ footer {
   text-decoration: none;
   color: #d3354a;
   padding: 5px;
+  
 }
 .text-link-active:hover {
   transition: all 0.5s;

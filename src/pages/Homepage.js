@@ -28,8 +28,7 @@ function Homepage({isLargerThanIPad, isSmallerThanIPad }) {
             LEARN MORE
           </Link>
         </FadeIn>
-      </section>)}
-      
+      </section>)}  
     </FadeIn>
   );
 }

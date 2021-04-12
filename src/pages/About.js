@@ -1,5 +1,4 @@
 import React from "react";
-
 import HorizontalBarChart from "../components/HorizontalBarChart";
 import xavier_picture from "../images/my_picture/xavier_picture.jpeg";
 import SocialMedia from "../components/SocialMedia";
