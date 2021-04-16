@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FadeIn from "./FadeIn";
 import ProjectDetails from "./ProjectDetails";
+import ProjectDetailsHover from "./ProjectDetailsHover";
 import ProjectDetailsSm from "./ProjectDetailsSm";
 
 function Project({
@@ -14,6 +15,7 @@ function Project({
 }) {
 
   const [isHovered, setIsHovered] = useState(false);
+  // const [isFocused, setIsFocused] = useState(false);
 
   return (
     <>
@@ -25,12 +27,12 @@ function Project({
             margin: "10px",
             position: "relative",
           }}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          onMouseEnter={() => {setIsHovered(true)}}
+          onMouseLeave={() => {setIsHovered(false)}}
           className="imgDiv"
           tabIndex={0}
-          onFocus={() => setIsHovered(true)}
-          onBlur={() => setIsHovered(false)}
+          // onFocus={() => {setIsFocused(true)}}
+          // onBlur={() => {setIsFocused(false)}}
         >
           {!isHovered && (
             <div style={{ position: "absolute" }}>
@@ -50,10 +52,20 @@ function Project({
               >
                 <h3 className="project-title">{name}</h3>
                 <p className="project-detail">{detail}</p>
-                <ProjectDetails repo={repo} website={website} />
+                <ProjectDetailsHover repo={repo} website={website} />
               </div>
             </FadeIn>
           )}
+          {/* {isFocused && (
+            <FadeIn>
+              <div
+              >
+                <h3 className="project-title">{name}</h3>
+                <p className="project-detail">{detail}</p>
+                <ProjectDetails repo={repo} website={website} />
+              </div>
+            </FadeIn>
+          )} */}
         </div>
       )}
       {isSmallerThanIPad && (
