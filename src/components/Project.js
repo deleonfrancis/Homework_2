@@ -15,7 +15,7 @@ function Project({
 }) {
 
   const [isHovered, setIsHovered] = useState(false);
-  // const [isFocused, setIsFocused] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
 
   return (
     <>
@@ -31,10 +31,10 @@ function Project({
           onMouseLeave={() => {setIsHovered(false)}}
           className="imgDiv"
           tabIndex={0}
-          // onFocus={() => {setIsFocused(true)}}
-          // onBlur={() => {setIsFocused(false)}}
+          onFocus={() => {setIsFocused(true)}}
+          onBlur={() => {setIsFocused(false)}}
         >
-          {!isHovered && (
+          {(!isHovered && !isFocused) && (
             <div style={{ position: "absolute" }}>
               <img
                 src={src}
@@ -56,7 +56,7 @@ function Project({
               </div>
             </FadeIn>
           )}
-          {/* {isFocused && (
+          {isFocused && (
             <FadeIn>
               <div
               >
@@ -65,7 +65,17 @@ function Project({
                 <ProjectDetails repo={repo} website={website} />
               </div>
             </FadeIn>
-          )} */}
+          )}
+          {(isHovered && isFocused) && (
+            <FadeIn>
+              <div
+              >
+                <h3 className="project-title">{name}</h3>
+                <p className="project-detail">{detail}</p>
+                <ProjectDetails repo={repo} website={website} />
+              </div>
+            </FadeIn>
+          )}
         </div>
       )}
       {isSmallerThanIPad && (
