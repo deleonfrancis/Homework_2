@@ -13,7 +13,7 @@ function SkillsIcons() {
         <i className="fab fa-2x fa-bootstrap text-purple mx-2"></i>
       </div>
       <div className="mt-3">
-        <p className="skills-no-icon">MongoDB, MySQL, Express, jQuery</p>
+        <p className="skills-no-icon">Redux, Context API, MongoDB, MySQL, Express, jQuery</p>
       </div>
     </>
   );

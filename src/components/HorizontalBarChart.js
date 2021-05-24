@@ -1,19 +1,29 @@
-import React from 'react'
-import { HorizontalBar } from 'react-chartjs-2'
+import React from "react";
+import { HorizontalBar } from "react-chartjs-2";
 
 const data = {
-  labels: ['JavaScript', 'React', 'Node.js', 'HTML', 'CSS', 'Express','MongoDB', 'MySQL', 'jQuery', 'Bootstrap'],
+  labels: [
+    "JavaScript",
+    "React",
+    "Redux",
+    "Context API",
+    "MongoDB",
+    "MySQL",
+    "RESTful API",
+    "Express",
+    "Node",
+    "jQuery",
+  ],
   datasets: [
     {
-      label: 'Skill Level',
-      data: [75, 75, 80, 95, 90, 80, 85, 80, 85, 95],
-      backgroundColor: function(labels){
-        return 'rgba(139, 99, 75, 0.3)'
-      }
+      label: "Skill Level",
+      data: [80, 85, 80, 80, 85, 80, 85, 90, 90, 85],
+      backgroundColor: function (labels) {
+        return "rgba(139, 99, 75, 0.3)";
+      },
     },
   ],
-  
-} 
+};
 
 const options = {
   scales: {
@@ -28,32 +38,32 @@ const options = {
       {
         ticks: {
           beginAtZero: true,
-          callback: function(value) {
-            return (value ) + '%';
-        }
+          callback: function (value) {
+            return value + "%";
+          },
         },
       },
     ],
   },
-    legend: {
-        display: false
+  legend: {
+    display: false,
+  },
+  tooltips: {
+    callbacks: {
+      label: function (tooltipItem) {
+        return tooltipItem.xLabel + "%";
+      },
     },
-    tooltips: {
-        callbacks: {
-           label: function(tooltipItem) {
-                  return tooltipItem.xLabel + '%';
-           }
-        }
-    }
-}
+  },
+};
 
 const HorizontalBarChart = () => (
   <>
-    <div className=''>
-      <h2 className='text-bg about-label'>Skills</h2>
+    <div className="">
+      <h2 className="text-bg about-label">Technologies</h2>
     </div>
     <HorizontalBar data={data} options={options} />
   </>
-)
+);
 
-export default HorizontalBarChart
+export default HorizontalBarChart;
