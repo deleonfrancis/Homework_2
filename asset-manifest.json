@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/My_Portfolio/static/css/main.abfd325e.chunk.css",
-    "main.js": "/My_Portfolio/static/js/main.830cddec.chunk.js",
-    "main.js.map": "/My_Portfolio/static/js/main.830cddec.chunk.js.map",
+    "main.js": "/My_Portfolio/static/js/main.335a0191.chunk.js",
+    "main.js.map": "/My_Portfolio/static/js/main.335a0191.chunk.js.map",
     "runtime-main.js": "/My_Portfolio/static/js/runtime-main.d58626bd.js",
     "runtime-main.js.map": "/My_Portfolio/static/js/runtime-main.d58626bd.js.map",
     "static/js/2.d7b756eb.chunk.js": "/My_Portfolio/static/js/2.d7b756eb.chunk.js",
@@ -10,12 +10,14 @@
     "index.html": "/My_Portfolio/index.html",
     "static/css/main.abfd325e.chunk.css.map": "/My_Portfolio/static/css/main.abfd325e.chunk.css.map",
     "static/js/2.d7b756eb.chunk.js.LICENSE.txt": "/My_Portfolio/static/js/2.d7b756eb.chunk.js.LICENSE.txt",
+    "static/media/budgetVault.7ec1d6d3.png": "/My_Portfolio/static/media/budgetVault.7ec1d6d3.png",
     "static/media/burgers.a66c45bc.png": "/My_Portfolio/static/media/burgers.a66c45bc.png",
     "static/media/dayGif.a6adb062.png": "/My_Portfolio/static/media/dayGif.a6adb062.png",
     "static/media/donde_login.8a92fa27.png": "/My_Portfolio/static/media/donde_login.8a92fa27.png",
     "static/media/ed_screenshot.14dd2fb8.png": "/My_Portfolio/static/media/ed_screenshot.14dd2fb8.png",
-    "static/media/francis_resume.ba7de25c.pdf": "/My_Portfolio/static/media/francis_resume.ba7de25c.pdf",
+    "static/media/francis_resume.75349ed3.pdf": "/My_Portfolio/static/media/francis_resume.75349ed3.pdf",
     "static/media/mood_1.c9f68d1a.png": "/My_Portfolio/static/media/mood_1.c9f68d1a.png",
+    "static/media/takeNote.251daebb.png": "/My_Portfolio/static/media/takeNote.251daebb.png",
     "static/media/weatherdash1.3f89da0e.png": "/My_Portfolio/static/media/weatherdash1.3f89da0e.png",
     "static/media/xavier_picture.6b631789.jpeg": "/My_Portfolio/static/media/xavier_picture.6b631789.jpeg"
   },
@@ -23,6 +25,6 @@
     "static/js/runtime-main.d58626bd.js",
     "static/js/2.d7b756eb.chunk.js",
     "static/css/main.abfd325e.chunk.css",
-    "static/js/main.830cddec.chunk.js"
+    "static/js/main.335a0191.chunk.js"
   ]
 }
