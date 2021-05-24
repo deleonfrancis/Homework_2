@@ -42,7 +42,7 @@ const handleKeyDown = (e) => {
           Repository
         </a>
       </li>
-      <li>
+      {website !== "n/a" && (<li>
         <a
           href={website}
           target="_blank"
@@ -54,7 +54,7 @@ const handleKeyDown = (e) => {
         >
           Website
         </a>
-      </li>
+      </li>)}
     </ul>
   );
 }
