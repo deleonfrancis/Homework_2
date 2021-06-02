@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useMediaQuery } from 'react-responsive'
 import "./css/styles.css";
 import Wrapper from "./components/Wrapper";
