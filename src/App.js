@@ -15,8 +15,8 @@ function App() {
   })
   const isSmallerThanIPad = useMediaQuery({ query: '(max-width: 767px)' })
   return (
-    <Router >
-      <div className="App2">
+    <Router basename="/My_Portfolio" >
+      <div className="App3">
         <Wrapper>
           <Switch>
             <Route exact path="/" render={(props)=>(<Homepage isLargerThanIPad={isLargerThanIPad} isSmallerThanIPad={isSmallerThanIPad} />)} />
