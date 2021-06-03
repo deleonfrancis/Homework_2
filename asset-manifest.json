@@ -1,30 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.abfd325e.chunk.css",
-    "main.js": "/static/js/main.f9dc012f.chunk.js",
-    "main.js.map": "/static/js/main.f9dc012f.chunk.js.map",
+    "main.css": "/static/css/main.862b5313.chunk.css",
+    "main.js": "/static/js/main.064626dc.chunk.js",
+    "main.js.map": "/static/js/main.064626dc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.06b5035f.js",
     "runtime-main.js.map": "/static/js/runtime-main.06b5035f.js.map",
-    "static/js/2.6b5e400f.chunk.js": "/static/js/2.6b5e400f.chunk.js",
-    "static/js/2.6b5e400f.chunk.js.map": "/static/js/2.6b5e400f.chunk.js.map",
+    "static/js/2.fd95ebad.chunk.js": "/static/js/2.fd95ebad.chunk.js",
+    "static/js/2.fd95ebad.chunk.js.map": "/static/js/2.fd95ebad.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.abfd325e.chunk.css.map": "/static/css/main.abfd325e.chunk.css.map",
-    "static/js/2.6b5e400f.chunk.js.LICENSE.txt": "/static/js/2.6b5e400f.chunk.js.LICENSE.txt",
+    "static/css/main.862b5313.chunk.css.map": "/static/css/main.862b5313.chunk.css.map",
+    "static/js/2.fd95ebad.chunk.js.LICENSE.txt": "/static/js/2.fd95ebad.chunk.js.LICENSE.txt",
     "static/media/budgetVault.7ec1d6d3.png": "/static/media/budgetVault.7ec1d6d3.png",
     "static/media/burgers.a66c45bc.png": "/static/media/burgers.a66c45bc.png",
     "static/media/dayGif.a6adb062.png": "/static/media/dayGif.a6adb062.png",
     "static/media/donde_login.8a92fa27.png": "/static/media/donde_login.8a92fa27.png",
     "static/media/ed_screenshot.14dd2fb8.png": "/static/media/ed_screenshot.14dd2fb8.png",
+    "static/media/expressJS.2dba8ea5.png": "/static/media/expressJS.2dba8ea5.png",
     "static/media/francis_resume.6686d51b.pdf": "/static/media/francis_resume.6686d51b.pdf",
+    "static/media/jQuery.c57a6eed.svg": "/static/media/jQuery.c57a6eed.svg",
+    "static/media/materializeLogo.813854b6.png": "/static/media/materializeLogo.813854b6.png",
+    "static/media/mongoDbLogo.057de5cd.png": "/static/media/mongoDbLogo.057de5cd.png",
     "static/media/mood_1.c9f68d1a.png": "/static/media/mood_1.c9f68d1a.png",
+    "static/media/reduxLogo.05cf2e8f.png": "/static/media/reduxLogo.05cf2e8f.png",
     "static/media/takeNote.251daebb.png": "/static/media/takeNote.251daebb.png",
     "static/media/weatherdash1.3f89da0e.png": "/static/media/weatherdash1.3f89da0e.png",
     "static/media/xavier_picture.6b631789.jpeg": "/static/media/xavier_picture.6b631789.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.06b5035f.js",
-    "static/js/2.6b5e400f.chunk.js",
-    "static/css/main.abfd325e.chunk.css",
-    "static/js/main.f9dc012f.chunk.js"
+    "static/js/2.fd95ebad.chunk.js",
+    "static/css/main.862b5313.chunk.css",
+    "static/js/main.064626dc.chunk.js"
   ]
 }
