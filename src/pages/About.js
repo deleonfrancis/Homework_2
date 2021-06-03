@@ -34,7 +34,8 @@ function About({ isLargerThanIPad, isSmallerThanIPad }) {
                 style={{ width: "150px", borderRadius: "10px" }}
               />
               <br />
-              <h2 className="text-bg my-3 about-label">About Me</h2>
+              <h2 className="text-bg mt-3 mb-1 about-label">About Me</h2>
+              <hr />
               <div style={{ width: "60%", margin: "auto auto 20px" }}>
                 <p className="about-detail mt-3">
                   I'm a passionate, solutions-oriented professional with a proven
@@ -58,9 +59,10 @@ function About({ isLargerThanIPad, isSmallerThanIPad }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-5">
-            {isLargerThanIPad && <HorizontalBarChart />}
-            {isSmallerThanIPad && <SkillsIcons />}
+          <div className="col-lg-6">
+          <SkillsIcons />
+            {/* {isLargerThanIPad && <HorizontalBarChart />}
+            {isSmallerThanIPad && <SkillsIcons />} */}
           </div>
         </div>
       </section>
