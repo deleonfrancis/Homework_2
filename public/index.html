@@ -9,8 +9,20 @@
       name="description"
       content="Web site created using create-react-app"
     />
+
+    <!-- For Thumbnail -->
+    <meta name="description" content="Xavier's Portfolio" />
+    <meta name="title" property="og:title" content="Xavier's Portfolio" />
+    <meta property="og:type" content="Website" />
+    <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51223739614_258c8803a9_k.jpg" />
+    <meta name="description" property="og:description" content="Xavier's Portfolio" />
+    <meta name="author" content="Xavier Francis" />
+
+    <!-- Manifest -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- <a data-flickr-embed="true" href="https://www.flickr.com/photos/193161494@N04/51223739614/in/dateposted-public/" title="hpThumbnail"><img src="https://live.staticflickr.com/65535/51223739614_258c8803a9_k.jpg" width="2048" height="1087" alt="hpThumbnail"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> -->
 
     <!-- Bootstrap CSS -->
     <link
@@ -21,7 +33,12 @@
     />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -31,7 +48,7 @@
     />
 
     <title>Xavier's Portfolio</title>
-    
+
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
@@ -44,16 +61,22 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
   </head>
