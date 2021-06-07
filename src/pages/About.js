@@ -41,7 +41,7 @@ function About({ isLargerThanIPad, isSmallerThanIPad }) {
                   I'm a passionate, solutions-oriented professional with a proven
                   background in designing and building web applications.
                   Adept in utilizing JavaScript, React, and a wide range of
-                  other technologies during application development process.
+                  other technologies during the application development process.
                 </p>
                 <SocialMedia />
                 <h3 className="text-dark mt-4 email-label">
