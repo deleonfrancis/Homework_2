@@ -17,6 +17,24 @@ function Project({
   const [isHovered, setIsHovered] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
 
+
+  const handleMouseEnter = () => {
+    setIsHovered(true)
+    setIsFocused(true)
+  }
+  const handleMouseLeave = () => {
+    setIsHovered(false)
+    setIsFocused(false)
+  }
+
+  const handleOnFocus = () => {
+    setIsFocused(true)
+    setIsHovered(false)
+  }
+  const handleOnBlur = () => {
+    setIsFocused(false)
+    setIsHovered(false)
+  }
   return (
     <>
       {isLargerThanIPad && (
@@ -27,12 +45,12 @@ function Project({
             margin: "10px",
             position: "relative",
           }}
-          onMouseEnter={() => {setIsHovered(true)}}
-          onMouseLeave={() => {setIsHovered(false)}}
+          onMouseEnter={() => {handleMouseEnter()}}
+          onMouseLeave={() => {handleMouseLeave()}}
           className="imgDiv"
           tabIndex={0}
-          onFocus={() => {setIsFocused(true)}}
-          onBlur={() => {setIsFocused(false)}}
+          onFocus={() => {handleOnFocus()}}
+          onBlur={() => {handleOnBlur()}}
         >
           {(!isHovered && !isFocused) && (
             <div style={{ position: "absolute" }}>

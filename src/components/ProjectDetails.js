@@ -6,19 +6,18 @@ function ProjectDetails({ repo, website }) {
   const anchorRefTwo = useRef(null)
 
 const handleKeyDown = (e) => {
+    // Down arrow
     if (e.keyCode === 40) {
-      // Down arrow
       e.preventDefault();
       anchorRef.current?.blur()
       anchorRefTwo.current?.focus()
-      console.log("down key pressed!");
 
-    } else if (e.keyCode === 38) {
-      // Up arrow
+    } 
+    // Up arrow
+    else if (e.keyCode === 38) {
       e.preventDefault();
       anchorRefTwo.current?.blur()
       anchorRef.current?.focus()
-      console.log("up key pressed!");
     }
   }
 

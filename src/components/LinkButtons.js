@@ -8,7 +8,6 @@ function LinkButtons({ about, portfolio, resume}) {
 
       {/* Home Link */}
       <Link to="/" 
-      // className={window.location.pathname === "/" ? "px-2 text-link " : "px-2"}
       className="px-2 text-link"
       >
         Home
