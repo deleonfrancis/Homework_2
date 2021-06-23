@@ -1,5 +1,4 @@
 import React from "react";
-// import HorizontalBarChart from "../components/HorizontalBarChart";
 import xavier_picture from "../images/my_picture/xavier_picture.jpeg";
 import SocialMedia from "../components/SocialMedia";
 import LinkButtons from "../components/LinkButtons";
@@ -61,8 +60,6 @@ function About({ isLargerThanIPad, isSmallerThanIPad }) {
           </div>
           <div className="col-lg-6">
           <SkillsIcons />
-            {/* {isLargerThanIPad && <HorizontalBarChart />}
-            {isSmallerThanIPad && <SkillsIcons />} */}
           </div>
         </div>
       </section>
