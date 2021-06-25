@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.862b5313.chunk.css",
-    "main.js": "/static/js/main.e4a5d84f.chunk.js",
-    "main.js.map": "/static/js/main.e4a5d84f.chunk.js.map",
+    "main.js": "/static/js/main.a49e2b2d.chunk.js",
+    "main.js.map": "/static/js/main.a49e2b2d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.06b5035f.js",
     "runtime-main.js.map": "/static/js/runtime-main.06b5035f.js.map",
     "static/js/2.fd95ebad.chunk.js": "/static/js/2.fd95ebad.chunk.js",
@@ -16,7 +16,7 @@
     "static/media/donde_login.8a92fa27.png": "/static/media/donde_login.8a92fa27.png",
     "static/media/ed_screenshot.14dd2fb8.png": "/static/media/ed_screenshot.14dd2fb8.png",
     "static/media/expressJS.2dba8ea5.png": "/static/media/expressJS.2dba8ea5.png",
-    "static/media/francis_resume.6686d51b.pdf": "/static/media/francis_resume.6686d51b.pdf",
+    "static/media/francis_resume.c5075708.pdf": "/static/media/francis_resume.c5075708.pdf",
     "static/media/jQuery.c57a6eed.svg": "/static/media/jQuery.c57a6eed.svg",
     "static/media/materializeLogo.813854b6.png": "/static/media/materializeLogo.813854b6.png",
     "static/media/mongoDbLogo.057de5cd.png": "/static/media/mongoDbLogo.057de5cd.png",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.06b5035f.js",
     "static/js/2.fd95ebad.chunk.js",
     "static/css/main.862b5313.chunk.css",
-    "static/js/main.e4a5d84f.chunk.js"
+    "static/js/main.a49e2b2d.chunk.js"
   ]
 }
