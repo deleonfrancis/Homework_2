@@ -44,22 +44,21 @@ function Portfolio({ isLargerThanIPad, isSmallerThanIPad }) {
             />
             {/* Project 2 */}
             <Project
+              name="Weather Dashboard"
+              detail="Get weather info for any city in the world."
+              src={weatherdash1}
+              repo="https://github.com/deleonfrancis/Weather_Dashboard"
+              website="https://deleonfrancis.github.io/Weather_Dashboard/"
+              isLargerThanIPad={isLargerThanIPad}
+              isSmallerThanIPad={isSmallerThanIPad}
+            />
+            {/* Project 3 */}
+            <Project
               name="takeNote"
               detail="A full-stack MERN Note taking Web App."
               src={takeNote}
               repo="https://github.com/deleonfrancis/takeNote"
               website="n/a"
-              isLargerThanIPad={isLargerThanIPad}
-              isSmallerThanIPad={isSmallerThanIPad}
-            />
-
-            {/* Project 3 */}
-            <Project
-              name="Dondé"
-              detail="A full-stack MERN travel planner application"
-              src={donde_login}
-              repo="https://github.com/jmasone15/travel-planner-project"
-              website="https://dondetravel.herokuapp.com/"
               isLargerThanIPad={isLargerThanIPad}
               isSmallerThanIPad={isSmallerThanIPad}
             />
@@ -75,13 +74,14 @@ function Portfolio({ isLargerThanIPad, isSmallerThanIPad }) {
               isLargerThanIPad={isLargerThanIPad}
               isSmallerThanIPad={isSmallerThanIPad}
             />
+
             {/* Project 5 */}
             <Project
-              name="Weather Dashboard"
-              detail="A current and 5-day weather application"
-              src={weatherdash1}
-              repo="https://github.com/deleonfrancis/Weather_Dashboard"
-              website="https://deleonfrancis.github.io/Weather_Dashboard/"
+              name="Dondé"
+              detail="A full-stack MERN travel planner application"
+              src={donde_login}
+              repo="https://github.com/jmasone15/travel-planner-project"
+              website="https://dondetravel.herokuapp.com/"
               isLargerThanIPad={isLargerThanIPad}
               isSmallerThanIPad={isSmallerThanIPad}
             />
