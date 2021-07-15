@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import FadeIn from "./FadeIn";
-// import ProjectDetails from "./ProjectDetails";
 import ProjectLinks from "./ProjectLinks";
 import ProjectDetailsSm from "./ProjectDetailsSm";
 
@@ -25,14 +24,6 @@ function Project({
     <>
       {isLargerThanIPad && (
         <div
-          style={
-            {
-              // width: "100%",
-              // height: "auto",
-              // margin: "10px",
-              // position: "relative",
-            }
-          }
           onMouseEnter={() => {
             handleMouseEnter();
           }}
@@ -56,19 +47,16 @@ function Project({
                 className="image-fluid"
                 style={{
                   width: "100%",
-                  // height: "auto",
-                  // margin: "10px",
-                  // position: "relative",
                 }}
               />
-              <div className="d-flex justify-content-end">
-                <i className="fas fa-info-circle port-icon text-light"></i>
-              </div>
+              {/* <div className="d-flex justify-content-center">
+                <i className="fas fa-info-circle port-icon"></i>
+              </div> */}
             </div>
           )}
           {isHovered && (
             <FadeIn>
-              <div>
+              <div className="mt-5">
                 <h3 className="project-title">{name}</h3>
                 <p className="project-detail">{detail}</p>
                 <ProjectLinks repo={repo} website={website} />

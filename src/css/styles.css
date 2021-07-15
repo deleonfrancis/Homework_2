@@ -152,10 +152,10 @@ footer {
 #portfolio-section {
   /* background-color: #1a1c1d; */
   /* color: white; */
-  margin: 50px auto;
+  margin: 30px auto;
   /* margin-top: 80px; */
-  /* padding: 80px; */
-  width: 90%;
+  /* padding: 90px; */
+  width: 95%;
   text-align: center;
 }
 #portfolio-section-mobile {
@@ -207,10 +207,11 @@ footer {
 
 .port-icon {
   position: absolute;
-  font-size: 500% !important;
-  top: 10%;
-  left: 70%;
-  opacity: .5;
+  font-size: 300% !important;
+  color: rgb(218, 176, 134);
+  top: 40%;
+  /* left: 70%; */
+  opacity: .65;
   z-index: 2;
 }
 

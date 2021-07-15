@@ -7,9 +7,7 @@ import takeNote from "../images/screenshots/takeNote.png";
 import donde_login from "../images/screenshots/donde_login.png";
 import weatherdash1 from "../images/screenshots/weatherdash1.png";
 import dayGif from "../images/screenshots/dayGif.png";
-import burgers from "../images/screenshots/burgers.png";
 import ed_screenshot from "../images/screenshots/ed_screenshot.png";
-import mood_1 from "../images/screenshots/mood_1.png";
 
 import FadeIn from "../components/FadeIn";
 
@@ -19,7 +17,7 @@ function Portfolio({ isLargerThanIPad, isSmallerThanIPad }) {
     <FadeIn>
       <section
         id={isLargerThanIPad ? "portfolio-section" : "portfolio-section-mobile"}
-        className="p-3 py-5 bg-light shadow-lg"
+        className="p-5 py-5 bg-light shadow-lg"
       >
         <h1 className="pt-3 rale-text mb-0">Portfolio</h1>
         <hr />
@@ -96,29 +94,6 @@ function Portfolio({ isLargerThanIPad, isSmallerThanIPad }) {
               detail="A time sensitive to do list application"
               repo="https://github.com/deleonfrancis/Work_Day_Scheduler"
               website="https://deleonfrancis.github.io/Work_Day_Scheduler/"
-              isLargerThanIPad={isLargerThanIPad}
-              isSmallerThanIPad={isSmallerThanIPad}
-            />
-          </div>
-          <div className="row center-this d-flex justify-content-center m-1">
-            {/* Project 7 */}
-            <Project
-              name="Burger Logger"
-              detail="Log the burger they've eaten and want to eat"
-              src={burgers}
-              repo="https://github.com/deleonfrancis/Burgers_logger"
-              website="https://evening-river-12924.herokuapp.com/"
-              isLargerThanIPad={isLargerThanIPad}
-              isSmallerThanIPad={isSmallerThanIPad}
-            />
-
-            {/* Project 8 */}
-            <Project
-              name='Group Project "Mood"'
-              detail="This application returns a YouTube music playlist based on your mood"
-              src={mood_1}
-              repo="https://github.com/Bokosyk/Mood"
-              website="https://bokosyk.github.io/Mood/"
               isLargerThanIPad={isLargerThanIPad}
               isSmallerThanIPad={isSmallerThanIPad}
             />
