@@ -13,6 +13,7 @@ import mood_1 from "../images/screenshots/mood_1.png";
 
 import FadeIn from "../components/FadeIn";
 
+
 function Portfolio({ isLargerThanIPad, isSmallerThanIPad }) {
   return (
     <FadeIn>
@@ -31,7 +32,7 @@ function Portfolio({ isLargerThanIPad, isSmallerThanIPad }) {
         )}
         {isSmallerThanIPad && <HamburgerBtn />}
         <FadeIn delay={500} duration={1000}>
-          <div className="row center-this d-flex justify-content-center">
+          <div className="row">
             {/* Project 1 */}
             <Project
               name="Budget Vault"
@@ -52,8 +53,11 @@ function Portfolio({ isLargerThanIPad, isSmallerThanIPad }) {
               isLargerThanIPad={isLargerThanIPad}
               isSmallerThanIPad={isSmallerThanIPad}
             />
-            {/* Project 3 */}
-            <Project
+            
+          </div>
+          <div className="row">
+          {/* Project 3 */}
+          <Project
               name="takeNote"
               detail="A full-stack MERN Note taking Web App."
               src={takeNote}
@@ -62,19 +66,18 @@ function Portfolio({ isLargerThanIPad, isSmallerThanIPad }) {
               isLargerThanIPad={isLargerThanIPad}
               isSmallerThanIPad={isSmallerThanIPad}
             />
-          </div>
-          <div className="row center-this d-flex justify-content-center">
             {/* Project 4 */}
             <Project
               name="Employee Directory"
-              detail="View filter a employee director"
+              detail="View and filter an employee directory."
               src={ed_screenshot}
               repo="https://github.com/deleonfrancis/Employee_Directory"
               website="https://deleonfrancis.github.io/Employee_Directory/"
               isLargerThanIPad={isLargerThanIPad}
               isSmallerThanIPad={isSmallerThanIPad}
             />
-
+          </div>
+          <div className="row">
             {/* Project 5 */}
             <Project
               name="Dondé"

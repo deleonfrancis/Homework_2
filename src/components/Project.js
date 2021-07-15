@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FadeIn from "./FadeIn";
-import ProjectDetails from "./ProjectDetails";
-import ProjectDetailsHover from "./ProjectDetailsHover";
+// import ProjectDetails from "./ProjectDetails";
+import ProjectLinks from "./ProjectLinks";
 import ProjectDetailsSm from "./ProjectDetailsSm";
 
 function Project({
@@ -13,84 +13,65 @@ function Project({
   isLargerThanIPad,
   isSmallerThanIPad,
 }) {
-
   const [isHovered, setIsHovered] = useState(false);
-  const [isFocused, setIsFocused] = useState(false);
-
 
   const handleMouseEnter = () => {
-    setIsHovered(true)
-    setIsFocused(true)
-  }
+    setIsHovered(true);
+  };
   const handleMouseLeave = () => {
-    setIsHovered(false)
-    setIsFocused(false)
-  }
-
-  const handleOnFocus = () => {
-    setIsFocused(true)
-    setIsHovered(false)
-  }
-  const handleOnBlur = () => {
-    setIsFocused(false)
-    setIsHovered(false)
-  }
+    setIsHovered(false);
+  };
   return (
     <>
       {isLargerThanIPad && (
         <div
-          style={{
-            width: "400px",
-            height: "205px",
-            margin: "10px",
-            position: "relative",
+          style={
+            {
+              // width: "100%",
+              // height: "auto",
+              // margin: "10px",
+              // position: "relative",
+            }
+          }
+          onMouseEnter={() => {
+            handleMouseEnter();
           }}
-          onMouseEnter={() => {handleMouseEnter()}}
-          onMouseLeave={() => {handleMouseLeave()}}
-          className="imgDiv"
+          onMouseLeave={() => {
+            handleMouseLeave();
+          }}
+          className="col-lg-6 py-3"
           tabIndex={0}
-          onFocus={() => {handleOnFocus()}}
-          onBlur={() => {handleOnBlur()}}
+          onFocus={() => {
+            handleMouseEnter();
+          }}
+          onBlur={() => {
+            handleMouseLeave();
+          }}
         >
-          {(!isHovered && !isFocused) && (
-            <div style={{ position: "absolute" }}>
+          {!isHovered && (
+            <div style={{ position: "" }}>
               <img
                 src={src}
                 alt={`${name} pic`}
-                className="image-fluid port-image project-image"
+                className="image-fluid"
+                style={{
+                  width: "100%",
+                  // height: "auto",
+                  // margin: "10px",
+                  // position: "relative",
+                }}
               />
               <div className="d-flex justify-content-end">
-                <i className="fas fa-info-circle port-icon text-dark"></i>
+                <i className="fas fa-info-circle port-icon text-light"></i>
               </div>
             </div>
           )}
           {isHovered && (
             <FadeIn>
-              <div
-              >
+              <div>
                 <h3 className="project-title">{name}</h3>
                 <p className="project-detail">{detail}</p>
-                <ProjectDetailsHover repo={repo} website={website} />
-              </div>
-            </FadeIn>
-          )}
-          {isFocused && (
-            <FadeIn>
-              <div
-              >
-                <h3 className="project-title">{name}</h3>
-                <p className="project-detail">{detail}</p>
-                <ProjectDetails repo={repo} website={website} />
-              </div>
-            </FadeIn>
-          )}
-          {(isHovered && isFocused) && (
-            <FadeIn>
-              <div
-              >
-                <h3 className="project-title">{name}</h3>
-                <p className="project-detail">{detail}</p>
-                <ProjectDetails repo={repo} website={website} />
+                <ProjectLinks repo={repo} website={website} />
               </div>
             </FadeIn>
           )}

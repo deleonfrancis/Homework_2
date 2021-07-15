@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProjectDetailsHover({ repo, website }) {
+function ProjectLinks({ repo, website }) {
   return (
     <ul style={{ listStyleType: "none", padding: "0", margin: "0" }}>
       <li>
@@ -31,4 +31,4 @@ function ProjectDetailsHover({ repo, website }) {
   );
 }
 
-export default ProjectDetailsHover;
+export default ProjectLinks;
